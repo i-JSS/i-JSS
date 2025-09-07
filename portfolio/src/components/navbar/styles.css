@@ -1,0 +1,142 @@
+.navbar-container {
+    width: 100%;
+    background: black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-logo {
+    color: #F5F5F5;
+    font-family: fantasy;
+    font-size: 30px;
+    margin: 0;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    position: relative;
+
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #F5F5F5;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-links li::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #8c0ce4;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: width 0.4s ease;
+}
+
+.navbar-links li:hover::after {
+    width: 100%;
+}
+
+.navbar-menu-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-menu-btn span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #F5F5F5;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.navbar-menu-btn.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.navbar-menu-btn.open span:nth-child(2) {
+    opacity: 0;
+}
+.navbar-menu-btn.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@media (max-width: 768px) {
+    .navbar-menu-btn {
+        display: flex;
+    }
+
+    .navbar-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: black;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 2rem;
+        display: none;
+        width: 200px;
+        box-shadow: -2px 0 5px rgba(0,0,0,0.3);
+    }
+
+    .navbar-links li {
+        width: 100%;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+.navbar-icons {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.navbar-icons .icon-btn{
+    all: unset;
+    background: none;
+    border: none;
+    font: inherit;
+    color: inherit;
+    text-align: inherit;
+    cursor: pointer;
+}
+
+.navbar-icons .icon-navbar{
+    width: 25px;
+    height: 25px;
+    max-width: 100%;
+    filter: invert(1);
+    transition: filter 0.2s;
+}
+
+.icon-navbar:hover path{
+    filter: invert(1);
+    fill: #8c0ce4;
+}

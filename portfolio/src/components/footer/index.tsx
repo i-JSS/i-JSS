@@ -7,7 +7,7 @@ import TelegramIcon from '../../assets/icon/telegram.svg?react';
 
 const Footer = () => {
     return (
-        <footer className="footer bg-white">
+        <footer className="footer">
 
             <div className="container">
 
