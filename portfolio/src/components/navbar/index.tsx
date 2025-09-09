@@ -37,7 +37,7 @@ const Navbar = () => {
                     <li><a href="/">Sobre</a></li>
                     <li><a href="/">Projetos</a></li>
                     <li><a href="/">Skills</a></li>
-                    <li><a href="/">Certificações</a></li>
+                    <li><a href="#certifications">Certificações</a></li>
                     <li><a href="/">Referências</a></li>
                     <li><a href="/">Contatos</a></li>
                 </ul>

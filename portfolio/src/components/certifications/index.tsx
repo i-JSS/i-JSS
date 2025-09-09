@@ -5,7 +5,7 @@ import { certifications } from "../../data/certifications.ts";
 const Certification = () => {
     return (
         <div className="certifications-container">
-            <h1>Certificações</h1>
+            <h1 id="certifications">Certificações</h1>
             <div className="certifications-grid">
                 {certifications.slice().reverse().map((cert, i) => (
                     <a key={i} href={cert.link} target="_blank" rel="noopener noreferrer" className="cert-card">
