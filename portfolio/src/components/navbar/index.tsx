@@ -22,7 +22,7 @@ const Navbar = () => {
     return (
         <div className="navbar-container">
             <div className="navbar">
-                <p className="navbar-logo">i-JSS</p>
+                <p className="navbar-logo">JSS</p>
 
                 <button
                     className={`navbar-menu-btn ${isOpen ? "open" : ""}`}
@@ -34,9 +34,12 @@ const Navbar = () => {
                 </button>
 
                 <ul className={`navbar-links ${isOpen ? "active" : ""}`}>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Contact</a></li>
+                    <li><a href="/">Sobre</a></li>
+                    <li><a href="/">Projetos</a></li>
+                    <li><a href="/">Skills</a></li>
+                    <li><a href="/">Certificações</a></li>
+                    <li><a href="/">Referências</a></li>
+                    <li><a href="/">Contatos</a></li>
                 </ul>
 
                 <div className="navbar-icons">
