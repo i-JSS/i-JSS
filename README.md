@@ -14,6 +14,13 @@
     <img width="49%" height="195px" src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=i-JSS&theme=omni" alt="João's GitHub stats"/>
   </a>
 
+
+<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/i-JSS/i-JSS/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/i-JSS/i-JSS/output/github-snake.svg" />
+    <img alt="snake" src="https://raw.githubusercontent.com/i-JSS/i-JSS/output/github-snake.svg" />
+</picture>
+
 </div>
 
 ---
