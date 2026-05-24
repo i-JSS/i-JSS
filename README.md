@@ -10,11 +10,6 @@
 
 <div align="center">
 
-  <a href="https://github.com/i-jss">
-    <img width="49%" height="195px" src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=i-JSS&theme=omni" alt="João's GitHub stats"/>
-  </a>
-
-
 <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/i-JSS/i-JSS/output/github-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/i-JSS/i-JSS/output/github-snake.svg" />
@@ -77,7 +72,9 @@
 
 ### Current Focus:
 
-<img src="https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png" min-width="400px" max-width="300px" width="300px" align="right" alt="Computer illustration"/>
+[//]: # (<img src="https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png" min-width="400px" max-width="300px" width="300px" align="right" alt="Computer illustration"/>)
+<img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=i-JSS&theme=omni" min-width="400px" max-width="300px" width="300px" align="right" alt="Computer illustration"/>
+
 
 Right now I'm deepening my expertise in **AI tooling and infrastructure**, with a focus on:
 
