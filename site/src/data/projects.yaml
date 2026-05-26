@@ -1,0 +1,489 @@
+projects:
+  - id: "6a13349c508acd6a99d5c644"
+    title: "Mortal Kombat GCES – Pipeline CI/CD"
+    category: academic
+    description: >
+      Pipeline completo de DevOps sobre um jogo de luta browser-based com backend em Node.js/Express
+      e frontend em HTML5 Canvas. Engloba containerização com Docker em ambientes dev e prod,
+      orquestração via Docker Compose com PostgreSQL, reverse proxy SSL via NGINX e pipeline CI/CD
+      no GitLab com build, testes unitários, lint e deploy contínuo.
+    stack:
+      - Node.js
+      - Docker
+      - PostgreSQL
+      - NGINX
+      - GitLab CI/CD
+    repository: "https://github.com/i-JSS/Mortal-Kombat-GCES"
+    start: "2025-10-30"
+    end: "2025-11-06"
+    learnings:
+      - Containerização de aplicações full-stack com Docker em ambientes de desenvolvimento e produção
+      - Orquestração de múltiplos serviços com Docker Compose
+      - Configuração de reverse proxy e SSL com NGINX
+      - Implementação de pipeline CI/CD no GitLab com build, testes e lint automatizados
+      - Deploy contínuo com publicação de imagens no Container Registry do GitLab
+      - Integração de banco de dados PostgreSQL em ambiente containerizado
+      - Boas práticas de DevOps com commits atômicos e entregas incrementais
+    role: "Desenvolvedor"
+    duration: "20 horas"
+
+  - id: "6a1335c5508acd6a99d5c65b"
+    title: "Pokédex – Consumo de REST API com JavaScript"
+    category: professional
+    description: >
+      Pokédex interativa construída com JavaScript puro consumindo a PokéAPI para exibir e navegar
+      pelos 1.292 Pokémons. Implementa requisições assíncronas com Fetch API e async/await,
+      paginação de API, manipulação dinâmica do DOM e navegação circular entre registros.
+    stack:
+      - JavaScript
+      - HTML
+      - CSS
+    repository: "https://github.com/i-JSS/EngNet-Trainee-PokeAPI"
+    start: "2025-10-25"
+    end: "2025-11-27"
+    learnings:
+      - Consumo de REST API pública com Fetch API nativa do JavaScript
+      - Programação assíncrona com async/await
+      - Paginação de API com parâmetros offset e limit
+      - Manipulação dinâmica do DOM com dados externos
+      - Tratamento e parsing de respostas JSON
+    role: "Desenvolvedor"
+    duration: "5 horas"
+
+  - id: "6a1335d2508acd6a99d5c65d"
+    title: "DETRAN Database – Modelagem Relacional"
+    category: professional
+    description: >
+      Modelagem e implementação de banco de dados relacional para monitoramento de infrações de
+      trânsito do DETRAN, cobrindo as três etapas clássicas: DER conceitual no brModelo,
+      Diagrama Lógico de Dados e scripts MySQL para criação de tabelas, população com dados
+      fictícios e consultas SQL.
+    stack:
+      - MySQL
+      - brModelo
+      - SQL
+    repository: "https://github.com/i-JSS/EngNet-Trainee-DETRAN-Database"
+    start: "2025-10-19"
+    end: "2025-10-20"
+    learnings:
+      - Modelagem conceitual de banco de dados com Diagrama Entidade-Relacionamento
+      - Refinamento do modelo com Diagrama Lógico de Dados
+      - Implementação física de banco relacional com MySQL
+      - Escrita de scripts DDL para criação de tabelas e DML para população
+      - Desenvolvimento de consultas SQL com filtros, agregações e ordenações
+    role: "Desenvolvedor"
+    duration: "5 horas"
+
+  - id: "6a133557508acd6a99d5c658"
+    title: "2Getters – Engenharia de Requisitos do Uber"
+    category: professional
+    description: >
+      Análise de requisitos do aplicativo Uber atuando como consultoria de software. Gerou artefatos
+      de pré-rastreabilidade (É/Não É/Faz/Não Faz, Matriz SWOT), elicitação (análise de protocolo,
+      personas, casos de uso) e pós-rastreabilidade (forward-from e matriz de rastreabilidade).
+    stack:
+      - Docsify
+      - Markdown
+      - UML
+    repository: "https://github.com/i-JSS/EngNet-Trainee-Uber-Requirements"
+    start: "2025-10-04"
+    end: "2025-10-12"
+    learnings:
+      - Delimitação de escopo de produto com análise É/Não É/Faz/Não Faz
+      - Análise estratégica de produto com Matriz SWOT
+      - Elicitação de requisitos com análise de protocolo e personas
+      - Modelagem de interações com casos de uso
+      - Rastreabilidade de requisitos com forward-from e matriz consolidada
+    role: "Analista de Requisitos"
+    duration: "10 horas"
+
+  - id: "6a133417508acd6a99d5c634"
+    title: "Vision Control NAO – Detecção de Obstáculos com Robô Humanoide"
+    category: academic
+    description: >
+      Sistema de visão computacional e controle remoto para o robô humanoide NAO, realizando
+      detecção de obstáculos em tempo real com OpenCV e Python 2.7 utilizando o SDK NAOqi.
+      O projeto adota arquitetura cliente-servidor, com backend responsável pelo controle do robô
+      e frontend web para operação remota via navegador.
+    stack:
+      - Python 2.7
+      - NAOqi SDK
+      - OpenCV
+      - NumPy
+      - Node.js
+    repository: "https://github.com/i-JSS/Vision-Control-NAO"
+    start: "2025-07-09"
+    end: "2025-07-24"
+    learnings:
+      - Visão computacional em tempo real para detecção de obstáculos
+      - Programação e controle de robô humanoide NAO via SDK NAOqi
+      - Integração de sensores e atuadores em plataforma robótica real
+      - Arquitetura cliente-servidor para controle remoto de robôs
+      - Backend robótico em Python com comunicação via NAOqi
+      - Desenvolvimento sob restrições de ambiente legado com Python 2.7
+    role: "Desenvolvedor"
+    duration: "10 horas"
+
+  - id: "6a133426508acd6a99d5c636"
+    title: "Sistema de Irrigação Automática"
+    category: academic
+    description: >
+      Firmware em C para ESP32 utilizando ESP-IDF para controle de irrigação automática com sensores
+      físicos e telemetria IoT. O sistema integra BMP280, DHT11, display OLED SSD1306, relé para
+      acionamento de válvula solenoide e envio de dados em tempo real para dashboard ThingsBoard
+      via MQTT.
+    stack:
+      - C
+      - ESP32
+      - ESP-IDF
+      - MQTT
+      - ThingsBoard
+    repository: "https://github.com/i-JSS/Automatic-Irrigation-System"
+    start: "2025-06-26"
+    end: "2025-07-15"
+    learnings:
+      - Desenvolvimento de firmware em C utilizando ESP-IDF para ESP32
+      - Integração de sensores e periféricos via I2C e GPIO
+      - Leitura de sensores ambientais e acionamento de atuadores físicos
+      - Telemetria IoT em tempo real utilizando MQTT e ThingsBoard
+      - Gerenciamento de build e componentes com CMake e esp-idf-lib
+      - Integração hardware-software em sistema embarcado físico
+    role: "Desenvolvedor Embarcado"
+    duration: "20 horas"
+
+  - id: "6a1334e4508acd6a99d5c64a"
+    title: "B-Tree – Implementação com Design by Contracts"
+    category: academic
+    description: >
+      Implementação da estrutura de dados Árvore-B em Python com os algoritmos de inserção,
+      busca e balanceamento, aplicando a técnica de Design by Contracts (DbC) para garantia
+      de corretude via pré e pós-condições enforçadas pela biblioteca icontract.
+    stack:
+      - Python
+      - icontract
+    repository: "https://github.com/i-JSS/B-Tree"
+    start: "2025-06-15"
+    end: "2025-06-22"
+    learnings:
+      - Implementação de Árvore-B com algoritmos de inserção, busca e balanceamento
+      - Aplicação de Design by Contracts com pré e pós-condições em Python
+      - Garantia de corretude de algoritmos via contratos formais
+      - Uso da biblioteca icontract para enforcement de contratos em Python
+    role: "Desenvolvedor"
+    duration: "10 horas"
+
+  - id: "6a133439508acd6a99d5c638"
+    title: "Controle de Trajetória – Robô Pioneer"
+    category: academic
+    description: >
+      Controle de trajetória em Python para o robô Pioneer no simulador CoppeliaSim, realizando
+      navegação autônoma até múltiplos alvos por meio de cinemática direta e inversa diferencial.
+      O sistema calcula velocidades individuais das rodas, aplica controle PID para alinhamento
+      e deslocamento, e realiza visualização da trajetória percorrida a partir de dados exportados
+      em CSV.
+    stack:
+      - Python
+      - CoppeliaSim
+      - NumPy
+      - Matplotlib
+    repository: "https://github.com/i-JSS/Trajetoria-Robo-Pioneer"
+    start: "2025-06-04"
+    end: "2025-07-09"
+    learnings:
+      - Cinemática direta e inversa aplicada a robôs móveis diferenciais
+      - Implementação de controle PID para navegação autônoma
+      - Planejamento e execução de trajetória com primitivas de movimento
+      - Integração Python com CoppeliaSim via API remota
+      - Visualização e análise de trajetórias com Matplotlib
+      - Modelagem matemática de sistemas robóticos móveis
+    role: "Desenvolvedor Solo"
+    duration: "10 horas"
+
+  - id: "6a133449508acd6a99d5c63a"
+    title: "X-Ray Controller – Controladora de Máquina de Raio-X"
+    category: academic
+    description: >
+      Controladora de máquina de raio-X em C++ executando em Raspberry Pi com arquitetura modular
+      baseada em HAL orientada a objetos. O sistema integra comunicação UART + Modbus com validação
+      CRC, controle de sensores e encoders via GPIO, comunicação I2C com BMP280, controle PID para
+      motores e processamento concorrente com worker threads.
+    stack:
+      - C++
+      - Raspberry Pi
+      - Modbus
+      - UART
+      - CMake
+    repository: "https://github.com/i-JSS/X-Ray-Controller"
+    start: "2025-05-13"
+    end: "2025-06-16"
+    learnings:
+      - Desenvolvimento de sistemas embarcados em C++ utilizando Raspberry Pi
+      - Comunicação serial UART com protocolo Modbus e validação CRC
+      - Integração de sensores, encoders e GPIO em sistema físico
+      - Implementação de controle PID para posicionamento de motores
+      - Programação concorrente com worker threads não-bloqueantes
+      - Gerenciamento automático de recursos utilizando RAII
+      - Arquitetura HAL modular para abstração de hardware
+      - Build modular com CMake e bibliotecas estáticas
+    role: "Desenvolvedor Embarcado"
+    duration: "20 horas"
+
+  - id: "6a13345a508acd6a99d5c63c"
+    title: "UnBeatables – Código de Competição RoboCup SPL (NAOv6)"
+    category: competition
+    description: >
+      Contribuição ao código de competição da equipe UnBeatables do LARA/UnB na RoboCup Standard
+      Platform League (SPL), a principal liga de futebol de robôs humanoides do mundo. O projeto
+      envolve software embarcado em Python para o robô humanoide NAO v6, integrando visão
+      computacional, localização, tomada de decisão autônoma e comportamento cooperativo entre
+      agentes para disputa de partidas reais de futebol. Time representante do Brasil qualificado
+      internacionalmente na RoboCup.
+    stack:
+      - Python
+      - NAOqi SDK
+      - OpenCV
+      - NumPy
+    repository: "https://github.com/lara-unb/UnBeatables/tree/NAOv6"
+    start: "2024-10-01"
+    end: "2025-10-01"
+    learnings:
+      - Desenvolvimento de software embarcado para robô humanoide NAO v6 em contexto de competição real
+      - Visão computacional aplicada à detecção de bola, campo e adversários em tempo real
+      - Localização e auto-posicionamento de robô em campo dinâmico
+      - Comportamento autônomo e tomada de decisão em agente individual
+      - Cooperação multi-agente entre robôs em ambiente competitivo
+      - Trabalho em equipe em projeto de longa duração com padrões de código de competição internacional
+      - Integração com SDK NAOqi para controle de atuadores e sensores do NAO
+    role: "Desenvolvedor de Software de Competição Embarcado"
+    duration: "300 horas"
+
+  - id: "6a1334f1508acd6a99d5c64e"
+    title: "SIGAA Scraper"
+    category: personal
+    description: >
+      Web scraper desenvolvido em Python para extração de dados de turmas do portal SIGAA da UnB,
+      com persistência em PostgreSQL. Implementado com complexidade O(N), garantindo que cada
+      categoria seja visitada apenas uma vez e minimizando o número de requisições ao servidor.
+    stack:
+      - Python
+      - PostgreSQL
+      - BeautifulSoup
+    repository: "https://github.com/i-JSS/Sigaa-Scraper"
+    start: "2024-09-02"
+    end: "2024-09-09"
+    learnings:
+      - Extração e parsing de dados de páginas web com web scraping
+      - Persistência de dados estruturados em banco relacional PostgreSQL
+      - Otimização de scraper com complexidade O(N) para minimizar requisições
+      - Tratamento de dados HTML e estruturação para armazenamento
+    role: "Desenvolvedor"
+    duration: "20 horas"
+
+  - id: "6a1334cb508acd6a99d5c648"
+    title: "QuintoAndar – Engenharia de Requisitos"
+    category: academic
+    description: >
+      Engenharia reversa dos requisitos do aplicativo QuintoAndar Imóveis, cobrindo elicitação,
+      modelagem e rastreabilidade. Gerou artefatos como personas, jornada de usuário, casos de uso,
+      histórias de usuário, backlog priorizado via MoSCoW, NFR Framework, inspeções e matrizes de
+      rastreabilidade backward-from e forward-from.
+    stack:
+      - Docsify
+      - Markdown
+      - UML
+      - NFR Framework
+    repository: "https://github.com/i-JSS/QuintoAndar-Requirements-Engineering"
+    start: "2024-07-15"
+    end: "2024-09-02"
+    learnings:
+      - Elicitação de requisitos com técnicas de brainstorm, personas, análise de protocolo e observação
+      - Modelagem de requisitos com casos de uso, cenários e léxicos
+      - Priorização de requisitos com MoSCoW e FURPS+
+      - Especificação de requisitos não-funcionais com NFR Framework
+      - Rastreabilidade de requisitos com matrizes backward-from e forward-from
+      - Inspeção e validação de artefatos em equipe
+    role: "Analista de Requisitos"
+    duration: "30 horas"
+
+  - id: "6a1334eb508acd6a99d5c64c"
+    title: "Compilador Pascal para MEPA"
+    category: academic
+    description: >
+      Compilador completo para Pascal Simplificado em C++, com pipeline dividido em análise léxica,
+      análise sintática e geração de código intermediário para a máquina hipotética MEPA. Suporta
+      funções, procedimentos, estruturas de repetição e condicionais.
+    stack:
+      - C++
+      - Pascal
+      - Makefile
+    repository: "https://github.com/i-JSS/Pascal-to-MEPA-Compiler"
+    start: "2024-05-20"
+    end: "2024-06-24"
+    learnings:
+      - Implementação de analisador léxico com tokenização de código-fonte
+      - Construção de analisador sintático baseado em gramática formal
+      - Geração de código intermediário para máquina hipotética
+      - Estruturação de pipeline de compilação em múltiplas etapas
+      - Implementação de suporte a funções, procedimentos e estruturas de controle
+    role: "Desenvolvedor"
+    duration: "40 horas"
+
+  - id: "6a1334f7508acd6a99d5c650"
+    title: "Prison Trading – Jogo com Banco de Dados Relacional"
+    category: academic
+    description: >
+      Jogo de estratégia e simulação em Python com banco de dados PostgreSQL como núcleo central,
+      onde o jogador assume o papel de um prisioneiro que deve negociar itens e resolver puzzles
+      para escapar. O projeto cobre todo o ciclo de modelagem relacional: DER, MER, normalização,
+      DDL/DML/DQL, álgebra relacional, triggers, stored procedures, views e pgAgent.
+    stack:
+      - Python
+      - PostgreSQL
+      - PL/pgSQL
+      - pgAgent
+    repository: "https://github.com/i-JSS/Prison-Trading"
+    start: "2024-04-01"
+    end: "2024-09-02"
+    learnings:
+      - Modelagem de banco de dados relacional com DER, MER e modelo relacional
+      - Normalização de esquemas relacionais
+      - Escrita de queries com DDL, DML e DQL
+      - Implementação de triggers, stored procedures e views em PL/pgSQL
+      - Uso de pgAgent para agendamento de tarefas no banco
+      - Monitoramento de desempenho com pg_stat_statements
+    role: "Desenvolvedor / DBA"
+    duration: "60 horas"
+
+  - id: "6a1334fd508acd6a99d5c652"
+    title: "KD Meu SS – Gerador de Grade Horária"
+    category: personal
+    description: >
+      Aplicação web full-stack para geração automática de grade horária universitária. O backend
+      é construído com Java e Spring Boot, expondo uma API consumida por um frontend em TypeScript,
+      HTML e CSS, com suporte a coloração por matéria e visualização da grade montada.
+    stack:
+      - Java
+      - Spring Boot
+      - TypeScript
+      - HTML
+      - CSS
+    repository: "https://github.com/i-JSS/KDMeuSS"
+    start: "2023-07-24"
+    end: "2023-08-04"
+    learnings:
+      - Desenvolvimento de API REST com Java e Spring Boot
+      - Construção de frontend com TypeScript, HTML e CSS
+      - Integração entre backend e frontend em arquitetura full-stack
+      - Gerenciamento de dependências e build com Maven
+    role: "Desenvolvedor"
+    duration: "25 horas"
+
+  - id: "6a133619508acd6a99d5c65f"
+    title: "Ticket Manager"
+    category: academic
+    description: >
+      Sistema desktop para gerenciamento de passagens aéreas desenvolvido individualmente utilizando
+      Java. O projeto adota arquitetura MVC, aplicação dos princípios SOLID, modelagem UML, interface
+      gráfica com JavaX Swing, testes unitários com JUnit e documentação técnica com Javadoc.
+    stack:
+      - Java
+      - JUnit
+      - JavaX Swing
+      - Javadoc
+      - UML
+    repository: "https://github.com/i-JSS/Ticket-Manager"
+    start: "2023-03-01"
+    end: "2023-06-28"
+    learnings:
+      - Aplicação de Programação Orientada a Objetos com herança, polimorfismo, encapsulamento e abstração
+      - Uso dos princípios SOLID em arquitetura Java
+      - Implementação do padrão MVC para separação de responsabilidades
+      - Modelagem de software com diagramas UML
+      - Desenvolvimento de interface gráfica desktop com JavaX Swing
+      - Escrita de testes unitários utilizando JUnit
+      - Documentação técnica utilizando Javadoc
+      - Execução do ciclo completo de desenvolvimento de software
+    role: "Desenvolvedor Solo"
+    duration: "30 horas"
+
+  - id: "6a133489508acd6a99d5c640"
+    title: "Feudo – Amarelo Girassol"
+    category: academic
+    description: >
+      Jogo de cartas multiplayer online inspirado em Coup, desenvolvido em equipe. Responsável pelo
+      backend de comunicação em tempo real, implementando gerenciamento dinâmico de salas, troca de
+      mensagens entre jogadores e arquitetura cliente-servidor utilizando Node.js, Express e Socket.io.
+    stack:
+      - Node.js
+      - Express
+      - Socket.io
+      - TypeScript
+      - JavaScript
+    repository: "https://github.com/i-JSS/Amarelo-Girassol"
+    start: "2022-08-05"
+    end: "2022-11-18"
+    learnings:
+      - Implementação de comunicação em tempo real utilizando WebSocket com Socket.io
+      - Criação e gerenciamento de salas multiplayer dinâmicas
+      - Arquitetura cliente-servidor utilizando Node.js e Express
+      - Desenvolvimento e integração de APIs com frontend
+      - Implementação de lógica de estados e fluxo de jogo
+      - Uso de TypeScript em projetos JavaScript
+      - Colaboração em equipe utilizando Git e GitHub
+    role: "Desenvolvedor Backend"
+    duration: "30 horas"
+
+  - id: "6a133495508acd6a99d5c642"
+    title: "Dashboard de Tráfego Aéreo no Brasil"
+    category: academic
+    description: >
+      Projeto de análise exploratória e visualização de dados sobre o tráfego aéreo brasileiro entre
+      2013 e 2015 utilizando dataset real da ANAC com mais de 1 milhão de registros. Implementa
+      pipeline ETL em Python com processamento manual e otimização de consultas sobre CSVs, gerando
+      visualizações estatísticas e geoespaciais sobre voos, companhias aéreas, cargas e distribuição
+      regional.
+    stack:
+      - Python
+      - NumPy
+      - Matplotlib
+      - Pandas
+      - GeoJSON
+    repository: "https://github.com/i-JSS/Brazil-Air-Traffic-Dashboard"
+    start: "2022-07-22"
+    end: "2022-09-20"
+    learnings:
+      - Análise exploratória de dados utilizando dataset real do setor aéreo brasileiro
+      - Implementação de pipeline ETL sem abstrações de alto nível
+      - Otimização manual de consultas sobre grande volume de dados tabulares
+      - Manipulação de dados com Python e NumPy
+      - Visualização de dados estatísticos e geoespaciais
+      - Processamento de mapas utilizando GeoJSON
+      - Colaboração em equipe utilizando Git e GitHub
+    role: "Desenvolvedor"
+    duration: "30 horas"
+
+  - id: "6a1334a2508acd6a99d5c646"
+    title: "UnB Competitive Programming"
+    category: competition
+    description: >
+      Coleção de mais de 100 soluções de programação competitiva resolvidas em judge online,
+      abrangendo 6 disciplinas e 3 maratonas de programação. Os problemas cobrem estruturas de dados,
+      algoritmos, arquitetura de computadores, compiladores e sistemas operacionais, implementados
+      em C, C++, Pascal, Assembly (RISC-V) e Regex.
+    stack:
+      - C
+      - C++
+      - Pascal
+      - RISC-V Assembly
+      - Regex
+    repository: "https://github.com/i-JSS/UnB-Competitive-Programming"
+    start: "2022-01-01"
+    end: null
+    learnings:
+      - Resolução de problemas algorítmicos sob restrições de tempo e memória
+      - Implementação de estruturas de dados clássicas e avançadas
+      - Programação de baixo nível com Assembly RISC-V
+      - Participação em maratonas de programação em equipe
+      - Escrita de soluções em múltiplas linguagens de programação
+    role: "Desenvolvedor"
+    duration: "200 horas"
