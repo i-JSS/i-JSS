@@ -72,7 +72,7 @@
 ### Current Focus:
 
 [//]: # (<img src="https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png" min-width="400px" max-width="300px" width="300px" align="right" alt="Computer illustration"/>)
-<img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=i-JSS&theme=omni" min-width="400px" max-width="300px" width="300px" align="right" alt="Computer illustration"/>
+<img src="https://github-readme-stats-eight-theta.vercel.app/api?username=i-JSS&show_icons=true&theme=dracula&include_all_commits=true&count_private=true%22/%3E" min-width="400px" max-width="300px" width="300px" align="right" alt="Computer illustration"/>
 
 
 Right now I'm deepening my expertise in **AI tooling and infrastructure**, with a focus on:
