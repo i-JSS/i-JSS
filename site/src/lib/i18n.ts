@@ -15,7 +15,7 @@ const i18n = {
             metrics: {
                 projects: "Projetos",
                 experiences: "Experiências",
-                teaching: "Semestres Docente",
+                teaching: "Semestres como Monitor",
                 titles: "Títulos RoboCup",
             },
         },
@@ -79,7 +79,7 @@ const i18n = {
             metrics: {
                 projects: "Projects",
                 experiences: "Experiences",
-                teaching: "Teaching Semesters",
+                teaching: "Tutoring Semesters",
                 titles: "RoboCup Titles",
             },
         },
@@ -143,7 +143,7 @@ const i18n = {
             metrics: {
                 projects: "Proyectos",
                 experiences: "Experiencias",
-                teaching: "Semestres Docente",
+                teaching: "Semestres como Monitor",
                 titles: "Títulos RoboCup",
             },
         },

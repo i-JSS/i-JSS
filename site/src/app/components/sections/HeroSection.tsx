@@ -21,8 +21,8 @@ export default function HeroSection({tr, totalProjects, totalExperiences}: HeroS
     const metrics = [
         {value: String(totalProjects), label: tr.hero.metrics.projects},
         {value: String(totalExperiences), label: tr.hero.metrics.experiences},
-        {value: "4", label: tr.hero.metrics.teaching},
-        {value: "1×", label: tr.hero.metrics.titles},
+        {value: "6", label: tr.hero.metrics.teaching},
+        {value: "1º", label: tr.hero.metrics.titles},
     ];
 
     return (
@@ -110,15 +110,18 @@ export default function HeroSection({tr, totalProjects, totalExperiences}: HeroS
 
                     {/* Metrics */}
                     <dl className="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-2xl mx-auto">
-                        {metrics.map(({value, label}) => (
+                        {metrics.map(({ value, label }) => (
                             <div
                                 key={label}
-                                className="text-center rounded-xl border border-border bg-card/60 py-5 px-4 shadow-sm"
+                                className="text-center rounded-xl border border-border bg-card/60 py-5 px-4 shadow-sm flex flex-col"
                             >
-                                <dt className="text-[10px] text-muted-foreground uppercase tracking-widest order-last">
+                                <dd className="text-3xl font-black font-mono text-foreground h-10 flex items-center justify-center">
+                                    {value}
+                                </dd>
+
+                                <dt className="text-[10px] text-muted-foreground uppercase tracking-widest mt-1">
                                     {label}
                                 </dt>
-                                <dd className="text-3xl font-black mb-1 font-mono text-foreground">{value}</dd>
                             </div>
                         ))}
                     </dl>
