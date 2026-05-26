@@ -39,6 +39,7 @@
 ![MongoDB](https://img.shields.io/badge/-MongoDB-0D1117?style=for-the-badge&logo=mongodb&logoColor=white&labelColor=0D1117)&nbsp;
 ![Neo4j](https://img.shields.io/badge/-Neo4j-0D1117?style=for-the-badge&logo=neo4j&logoColor=white&labelColor=0D1117)&nbsp;
 ![IBM Cloudant](https://img.shields.io/badge/-IBM_Cloudant-0D1117?style=for-the-badge&logo=ibm&logoColor=white&labelColor=0D1117)&nbsp;
+![Qdrant](https://img.shields.io/badge/-Qdrant-0D1117?style=for-the-badge&logo=qdrant&logoColor=white&labelColor=0D1117)&nbsp;
 
 ### Technologies:
 ![Git](https://img.shields.io/badge/-Git-0D1117?style=for-the-badge&logo=git&logoColor=white&labelColor=0D1117)&nbsp;
@@ -58,21 +59,21 @@
 ![GitHub Actions](https://img.shields.io/badge/-GitHub_Actions-0D1117?style=for-the-badge&logo=githubactions&logoColor=white&labelColor=0D1117)&nbsp;
 ![CI/CD](https://img.shields.io/badge/-CI%2FCD-0D1117?style=for-the-badge&logo=circleci&logoColor=white&labelColor=0D1117)&nbsp;
 ![NGINX](https://img.shields.io/badge/-NGINX-0D1117?style=for-the-badge&logo=nginx&logoColor=white&labelColor=0D1117)&nbsp;
-![AWS](https://img.shields.io/badge/-AWS-0D1117?style=for-the-badge&logo=amazonwebservices&logoColor=white&labelColor=0D1117)&nbsp;
+
+[//]: # (![AWS]&#40;https://img.shields.io/badge/-AWS-0D1117?style=for-the-badge&logo=amazonwebservices&logoColor=white&labelColor=0D1117&#41;&nbsp;)
 
 ### AI:
 ![Machine Learning](https://img.shields.io/badge/-Machine_Learning-0D1117?style=for-the-badge&logo=scikitlearn&logoColor=white&labelColor=0D1117)&nbsp;
 ![RAG](https://img.shields.io/badge/-RAG-0D1117?style=for-the-badge&logo=semanticweb&logoColor=white&labelColor=0D1117)&nbsp;
 ![MCP](https://img.shields.io/badge/-MCP-0D1117?style=for-the-badge&logo=anthropic&logoColor=white&labelColor=0D1117)&nbsp;
 ![Chatbot](https://img.shields.io/badge/-Chatbot-0D1117?style=for-the-badge&logo=probot&logoColor=white&labelColor=0D1117)&nbsp;
-![LangChain](https://img.shields.io/badge/-LangChain-0D1117?style=for-the-badge&logo=chainlink&logoColor=white&labelColor=0D1117)&nbsp;
 
 ---
 
 ### Current Focus:
 
 [//]: # (<img src="https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png" min-width="400px" max-width="300px" width="300px" align="right" alt="Computer illustration"/>)
-<img src="https://github-readme-stats-eight-theta.vercel.app/api?username=i-JSS&show_icons=true&theme=dracula&include_all_commits=true&count_private=true%22/%3E" min-width="400px" max-width="300px" width="300px" align="right" alt="Computer illustration"/>
+<img src="https://github-readme-stats-eight-theta.vercel.app/api?username=i-JSS&show_icons=true&theme=dracula&include_all_commits=true&count_private=true%22/%3E" min-width="500px" max-width="300px" width="300px" align="right" alt="Computer illustration"/>
 
 
 Right now I'm deepening my expertise in **AI tooling and infrastructure**, with a focus on:
