@@ -91,7 +91,7 @@ export default function Navbar({
 
                     <div className="flex items-center gap-1.5">
                         <a
-                            href="https://github.com/joaoginuino"
+                            href="https://github.com/i-JSS"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex h-9 w-9 items-center justify-center rounded-lg border border-border hover:bg-secondary hover:border-primary/30 transition-all"
@@ -101,7 +101,7 @@ export default function Navbar({
                         </a>
 
                         <a
-                            href="https://linkedin.com/in/joaoginuino"
+                            href="https://linkedin.com/in/i-jss"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex h-9 w-9 items-center justify-center rounded-lg border border-border hover:bg-secondary hover:border-primary/30 transition-all"
