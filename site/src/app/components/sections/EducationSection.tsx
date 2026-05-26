@@ -4,6 +4,8 @@ import {ExternalLink} from "lucide-react";
 import {fadeUp, fadeUpChild, fadeUpChildReduced, fadeUpReduced, pick, staggerParent,} from "@/lib/animate";
 import SectionIndex from "@/app/components/ui/SectionIndex";
 import type {Translations} from "@/lib/i18n";
+import unbImage from "../../../assets/unb.png";
+import cnaImage from "../../../assets/cna.png";
 
 // ─── Education card (reusable for UnB + CNA) ─────────────────────────────────
 
@@ -19,8 +21,6 @@ interface EducationCardProps {
 const EducationCard = memo(function EducationCard({
                                                       imageUrl,
                                                       imageAlt,
-                                                      badgeLabel,
-                                                      badgeColor,
                                                       children,
                                                       variants,
                                                   }: EducationCardProps) {
@@ -43,13 +43,6 @@ const EducationCard = memo(function EducationCard({
                     aria-hidden="true"
                     className="absolute inset-0 bg-gradient-to-t from-card via-card/30 to-transparent"
                 />
-                <div
-                    className="absolute top-3 right-3 flex items-center justify-center h-9 px-3 rounded-lg text-white font-black text-[10px] tracking-tight shadow-md"
-                    style={{backgroundColor: badgeColor}}
-                    aria-hidden="true"
-                >
-                    {badgeLabel}
-                </div>
             </div>
             <div className="p-7">{children}</div>
         </motion.div>
@@ -177,10 +170,8 @@ export default function EducationSection({tr}: EducationSectionProps) {
                                 {tr.education.education_label}
                             </p>
                             <EducationCard
-                                imageUrl="https://images.unsplash.com/photo-1700671562333-f71286a7c748?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                                imageUrl={unbImage}
                                 imageAlt="Campus universitário da UnB"
-                                badgeLabel="UnB"
-                                badgeColor="#007A33"
                                 variants={cardV}
                             >
                                 <h3 className="text-2xl font-black mb-2">{tr.education.degree}</h3>
@@ -210,10 +201,8 @@ export default function EducationSection({tr}: EducationSectionProps) {
                                 {tr.education.idiomas_label}
                             </p>
                             <EducationCard
-                                imageUrl="https://images.unsplash.com/photo-1543109740-4bdb38fda756?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                                imageUrl={cnaImage}
                                 imageAlt="Aprendizado de inglês"
-                                badgeLabel="CNA"
-                                badgeColor="#003087"
                                 variants={cardV}
                             >
                                 <div className="flex items-start justify-between gap-4">
