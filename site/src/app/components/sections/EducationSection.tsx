@@ -6,6 +6,7 @@ import SectionIndex from "@/app/components/ui/SectionIndex";
 import type {Translations} from "@/lib/i18n";
 import unbImage from "../../../assets/unb.png";
 import cnaImage from "../../../assets/cna.png";
+import { CERTS } from "../../../data/certifications"
 
 // ─── Education card (reusable for UnB + CNA) ─────────────────────────────────
 
@@ -82,8 +83,9 @@ const CertCard = memo(function CertCard({
                     <span className="text-xs font-mono font-medium text-foreground">{year}</span>
                     <a
                         href={credential}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="flex h-7 w-7 items-center justify-center rounded-lg border border-border text-muted-foreground hover:text-primary hover:border-primary/40 transition-colors"
-                        onClick={(e) => e.preventDefault()}
                         aria-label={`View credential for ${title}`}
                     >
                         <ExternalLink className="h-3 w-3" aria-hidden="true"/>
@@ -93,35 +95,6 @@ const CertCard = memo(function CertCard({
         </motion.div>
     );
 });
-
-// ─── Cert data ────────────────────────────────────────────────────────────────
-
-const CERTS = [
-    {
-        title: "Práticas de Cloud Services",
-        issuer: "Instituto de Pesquisas ELDORADO",
-        year: "Jun/2025",
-        credential: "#",
-    },
-    {
-        title: "Algoritmos e Programação Orientada a Objetos",
-        issuer: "Instituto de Pesquisas ELDORADO",
-        year: "May/2025",
-        credential: "#",
-    },
-    {
-        title: "Cisco Networking Basics",
-        issuer: "Cisco Networking Academy",
-        year: "Jan/2025",
-        credential: "#",
-    },
-    {
-        title: "Desenvolvimento de Jogos",
-        issuer: "Danki Code",
-        year: "Mar/2024",
-        credential: "#",
-    },
-] as const;
 
 // ─── Section ──────────────────────────────────────────────────────────────────
 

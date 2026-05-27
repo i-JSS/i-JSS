@@ -22,7 +22,7 @@ export default function HeroSection({tr, totalProjects, totalExperiences}: HeroS
         {value: String(totalProjects)+'+', label: tr.hero.metrics.projects},
         {value: String(totalExperiences), label: tr.hero.metrics.experiences},
         {value: "6", label: tr.hero.metrics.teaching},
-        {value: "1º", label: tr.hero.metrics.titles},
+        {value: "1", label: tr.hero.metrics.titles},
     ];
 
     return (
