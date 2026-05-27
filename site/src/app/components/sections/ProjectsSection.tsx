@@ -132,6 +132,7 @@ interface ProjectPreviewProps {
 
 const projectImages = import.meta.glob("@/assets/projects/*", {
     eager: true,
+    query: { format: 'webp', w: '600', quality: '75' },
     import: "default",
 }) as Record<string, string>;
 
@@ -152,7 +153,7 @@ const ProjectPreview = memo(function ProjectPreview({
             {/* Thumbnail */}
             <div className="relative h-64 overflow-hidden">
                 <img
-                    src={project.image ? projectImages[`/src/assets/projects/${project.image}`] ?? projectsBg : projectsBg}
+                    src={projectImages[`/src/assets/projects/${project.image}`] ?? projectsBg}
                     alt={`Visual for ${project.title}`}
                     className="w-full h-full object-cover"
                     loading="lazy"
@@ -310,6 +311,7 @@ export default function ProjectsSection({
                             categoryLabel={(cat) => categoryLabels[cat] ?? cat}
                             reduced={reduced}
                         />
+                        <div className="h-0 lg:h-48" aria-hidden="true" />
                     </div>
 
                     {/* Right — sticky preview (desktop only) */}
