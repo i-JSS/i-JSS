@@ -26,6 +26,7 @@ projects:
       - Boas práticas de DevOps com commits atômicos e entregas incrementais
     role: "Desenvolvedor"
     duration: "20 horas"
+    image: "mk_gces.png"
 
   - id: "6a1335c5508acd6a99d5c65b"
     title: "Pokédex – Consumo de REST API com JavaScript"
@@ -49,6 +50,7 @@ projects:
       - Tratamento e parsing de respostas JSON
     role: "Desenvolvedor"
     duration: "5 horas"
+    image: "pokeapi.png"
 
   - id: "6a1335d2508acd6a99d5c65d"
     title: "DETRAN Database – Modelagem Relacional"
@@ -73,6 +75,7 @@ projects:
       - Desenvolvimento de consultas SQL com filtros, agregações e ordenações
     role: "Desenvolvedor"
     duration: "5 horas"
+    image: "mysql.png"
 
   - id: "6a133557508acd6a99d5c658"
     title: "2Getters – Engenharia de Requisitos do Uber"
@@ -96,6 +99,7 @@ projects:
       - Rastreabilidade de requisitos com forward-from e matriz consolidada
     role: "Analista de Requisitos"
     duration: "10 horas"
+    image: "uber.png"
 
   - id: "6a133417508acd6a99d5c634"
     title: "Vision Control NAO – Detecção de Obstáculos com Robô Humanoide"
@@ -123,6 +127,7 @@ projects:
       - Desenvolvimento sob restrições de ambiente legado com Python 2.7
     role: "Desenvolvedor"
     duration: "10 horas"
+    image: "nao.png"
 
   - id: "6a133426508acd6a99d5c636"
     title: "Sistema de Irrigação Automática"
@@ -150,6 +155,7 @@ projects:
       - Integração hardware-software em sistema embarcado físico
     role: "Desenvolvedor Embarcado"
     duration: "20 horas"
+    image: "irrigacao.jpeg"
 
   - id: "6a1334e4508acd6a99d5c64a"
     title: "B-Tree – Implementação com Design by Contracts"
@@ -171,6 +177,7 @@ projects:
       - Uso da biblioteca icontract para enforcement de contratos em Python
     role: "Desenvolvedor"
     duration: "10 horas"
+    image: "contract.png"
 
   - id: "6a133439508acd6a99d5c638"
     title: "Controle de Trajetória – Robô Pioneer"
@@ -198,6 +205,7 @@ projects:
       - Modelagem matemática de sistemas robóticos móveis
     role: "Desenvolvedor Solo"
     duration: "10 horas"
+    image: "pioneer.png"
 
   - id: "6a133449508acd6a99d5c63a"
     title: "X-Ray Controller – Controladora de Máquina de Raio-X"
@@ -227,6 +235,7 @@ projects:
       - Build modular com CMake e bibliotecas estáticas
     role: "Desenvolvedor Embarcado"
     duration: "20 horas"
+    image: "xray.png"
 
   - id: "6a13345a508acd6a99d5c63c"
     title: "UnBeatables – Código de Competição RoboCup SPL (NAOv6)"
@@ -256,6 +265,7 @@ projects:
       - Integração com SDK NAOqi para controle de atuadores e sensores do NAO
     role: "Desenvolvedor de Software de Competição Embarcado"
     duration: "300 horas"
+    image: "unbeatables.png"
 
   - id: "6a1334f1508acd6a99d5c64e"
     title: "SIGAA Scraper"
@@ -278,6 +288,7 @@ projects:
       - Tratamento de dados HTML e estruturação para armazenamento
     role: "Desenvolvedor"
     duration: "20 horas"
+    image: "sigaa.png"
 
   - id: "6a1334cb508acd6a99d5c648"
     title: "QuintoAndar – Engenharia de Requisitos"
@@ -304,6 +315,7 @@ projects:
       - Inspeção e validação de artefatos em equipe
     role: "Analista de Requisitos"
     duration: "30 horas"
+    image: "uml.png"
 
   - id: "6a1334eb508acd6a99d5c64c"
     title: "Compilador Pascal para MEPA"
@@ -327,6 +339,7 @@ projects:
       - Implementação de suporte a funções, procedimentos e estruturas de controle
     role: "Desenvolvedor"
     duration: "40 horas"
+    image: "compilador.png"
 
   - id: "6a1334f7508acd6a99d5c650"
     title: "Prison Trading – Jogo com Banco de Dados Relacional"
@@ -353,6 +366,7 @@ projects:
       - Monitoramento de desempenho com pg_stat_statements
     role: "Desenvolvedor / DBA"
     duration: "60 horas"
+    image: "postgre.png"
 
   - id: "6a1334fd508acd6a99d5c652"
     title: "KD Meu SS – Gerador de Grade Horária"
@@ -377,6 +391,7 @@ projects:
       - Gerenciamento de dependências e build com Maven
     role: "Desenvolvedor"
     duration: "25 horas"
+    image: "kdmeuss.png"
 
   - id: "6a133619508acd6a99d5c65f"
     title: "Ticket Manager"
@@ -405,6 +420,7 @@ projects:
       - Execução do ciclo completo de desenvolvimento de software
     role: "Desenvolvedor Solo"
     duration: "30 horas"
+    image: "solid.png"
 
   - id: "6a133489508acd6a99d5c640"
     title: "Feudo – Amarelo Girassol"
@@ -432,6 +448,7 @@ projects:
       - Colaboração em equipe utilizando Git e GitHub
     role: "Desenvolvedor Backend"
     duration: "30 horas"
+    image: "feudo.png"
 
   - id: "6a133495508acd6a99d5c642"
     title: "Dashboard de Tráfego Aéreo no Brasil"
@@ -461,6 +478,7 @@ projects:
       - Colaboração em equipe utilizando Git e GitHub
     role: "Desenvolvedor"
     duration: "30 horas"
+    image: "apc.png"
 
   - id: "6a1334a2508acd6a99d5c646"
     title: "UnB Competitive Programming"
@@ -487,3 +505,4 @@ projects:
       - Escrita de soluções em múltiplas linguagens de programação
     role: "Desenvolvedor"
     duration: "200 horas"
+    image: "sbc.png"

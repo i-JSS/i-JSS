@@ -130,6 +130,11 @@ interface ProjectPreviewProps {
     className?: string;
 }
 
+const projectImages = import.meta.glob("@/assets/projects/*", {
+    eager: true,
+    import: "default",
+}) as Record<string, string>;
+
 const ProjectPreview = memo(function ProjectPreview({
                                                         project,
                                                         categoryLabel,
@@ -147,7 +152,7 @@ const ProjectPreview = memo(function ProjectPreview({
             {/* Thumbnail */}
             <div className="relative h-64 overflow-hidden">
                 <img
-                    src={projectsBg}
+                    src={project.image ? projectImages[`/src/assets/projects/${project.image}`] ?? projectsBg : projectsBg}
                     alt={`Visual for ${project.title}`}
                     className="w-full h-full object-cover"
                     loading="lazy"
@@ -295,7 +300,10 @@ export default function ProjectsSection({
                         </motion.div>
 
                         <ProjectList
-                            projects={filteredProjects}
+                            projects={[...filteredProjects].sort((a, b) => {
+                                const parseHours = (d: string) => parseFloat(d.replace(/[^0-9.]/g, ""));
+                                return parseHours(b.duration) - parseHours(a.duration);
+                            })}
                             selectedId={selectedProject?.id ?? null}
                             onSelect={selectProject}
                             filterKey={filter}

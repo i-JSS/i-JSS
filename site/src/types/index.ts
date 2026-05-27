@@ -15,6 +15,7 @@ export interface Project {
     learnings: string[];
     role: string;
     duration: string;
+    image?: string;
 }
 
 export interface Experience {
