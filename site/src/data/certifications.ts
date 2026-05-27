@@ -23,4 +23,10 @@ export const CERTS = [
         year: "Mar/2024",
         credential: "../assets/cert/danki-games.pdf",
     },
+    {
+        title: "Introdução ao Node.js com JavaScript",
+        issuer: "Dio",
+        year: "jan/2023",
+        credential: "../assets/cert/dio_node.pdf",
+    },
 ] as const;
