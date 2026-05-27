@@ -6,6 +6,7 @@ import SectionIndex from "@/app/components/ui/SectionIndex";
 import type {Translations} from "@/lib/i18n";
 import unbImage from "../../../assets/unb.png";
 import cnaImage from "../../../assets/cna.png";
+import ndImage from "../../../assets/notredame.png";
 import { CERTS } from "../../../data/certifications"
 
 // ─── Education card (reusable for UnB + CNA) ─────────────────────────────────
@@ -180,19 +181,42 @@ export default function EducationSection({tr}: EducationSectionProps) {
                             >
                                 <div className="flex items-start justify-between gap-4">
                                     <div>
-                                        <h3 className="font-bold text-base mb-1">CNA — Inglês</h3>
-                                        <p className="text-sm text-muted-foreground">Centro de Línguas CNA</p>
+                                        <h3 className="font-bold text-base mb-1">{tr.education.cna_meta.nome}</h3>
+                                        <p className="text-sm text-muted-foreground">{tr.education.cna_meta.local}</p>
                                         <p className="text-xs text-muted-foreground/70 mt-0.5">
-                                            {tr.education.cna_meta}
+                                            {tr.education.cna_meta.status} (2023 - 2026)
                                         </p>
                                     </div>
                                     <span
                                         className="inline-block rounded-lg border border-primary/30 bg-primary/10 px-3 py-1.5 text-xs font-mono font-semibold text-primary shrink-0">
-                    Advanced 1
+                    B2
+                  </span>
+                                </div>
+                            </EducationCard>
+
+                            <br></br>
+
+                            <EducationCard
+                                imageUrl={ndImage}
+                                imageAlt="Aprendizado de espanhol"
+                                variants={cardV}
+                            >
+                                <div className="flex items-start justify-between gap-4">
+                                    <div>
+                                        <h3 className="font-bold text-base mb-1">{tr.education.nd_meta.nome}</h3>
+                                        <p className="text-sm text-muted-foreground">{tr.education.nd_meta.local}</p>
+                                        <p className="text-xs text-muted-foreground/70 mt-0.5">
+                                            {tr.education.nd_meta.status} (2019 - 2021)
+                                        </p>
+                                    </div>
+                                    <span
+                                        className="inline-block rounded-lg border border-primary/30 bg-primary/10 px-3 py-1.5 text-xs font-mono font-semibold text-primary shrink-0">
+                    A2
                   </span>
                                 </div>
                             </EducationCard>
                         </div>
+
                     </motion.div>
 
                     {/* Right — Certifications */}

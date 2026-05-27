@@ -57,7 +57,16 @@ const i18n = {
                 "Engenharia de Requisitos",
                 "Robótica",
             ],
-            cna_meta: "Em andamento",
+            cna_meta: {
+                status: "Em andamento",
+                local: "CNA Idiomas",
+                nome: "Inglês",
+            },
+            nd_meta: {
+                status: "Concluído",
+                local: "Colégio Notre Dame Brasília",
+                nome: "Espanhol",
+            },
         },
         footer: {
             role: "Engenheiro de Software",
@@ -121,7 +130,16 @@ const i18n = {
                 "Requirements Engineering",
                 "Robotics",
             ],
-            cna_meta: "In progress",
+            cna_meta: {
+                status: "In Progress",
+                local: "CNA Idiomas",
+                nome: "English",
+            },
+            nd_meta: {
+                status: "Completed",
+                local: "Notre Dame School Brasília",
+                nome: "Spanish",
+            },
         },
         footer: {
             role: "Software Engineer",
@@ -185,7 +203,16 @@ const i18n = {
                 "Ingeniería de Requisitos",
                 "Robótica",
             ],
-            cna_meta: "En curso",
+            cna_meta: {
+                status: "En curso",
+                local: "CNA Idiomas",
+                nome: "Inglés",
+            },
+            nd_meta: {
+                status: "Completado",
+                local: "Colegio Notre Dame Brasília",
+                nome: "Español",
+            },
         },
         footer: {
             role: "Ingeniero de Software",
