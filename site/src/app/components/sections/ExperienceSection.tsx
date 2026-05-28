@@ -181,7 +181,7 @@ export default function ExperienceSection({experiences, tr}: ExperienceSectionPr
                     >
                         {sorted.map((exp, index) => (
                             <ExperienceItem
-                                key={`${exp.company}-${exp.start}`}
+                                key={index}
                                 exp={exp}
                                 index={index}
                                 reduced={reduced}

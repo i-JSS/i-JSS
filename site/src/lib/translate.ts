@@ -1,4 +1,4 @@
-import type {Experience, Project} from "@/types";
+import type {Experience, Project, Cert} from "@/types";
 
 const CACHE_KEY = "jg_tr_v1";
 
@@ -36,19 +36,30 @@ async function autoTranslate(text: string, lang: "en" | "es"): Promise<string> {
 }
 
 export async function translateProject(p: Project, lang: "en" | "es"): Promise<Project> {
-    const [description, role, ...learnings] = await Promise.all([
+    const [title, description, role, ...learnings] = await Promise.all([
+        autoTranslate(p.title, lang),
         autoTranslate(p.description, lang),
         autoTranslate(p.role, lang),
         ...p.learnings.map((l) => autoTranslate(l, lang)),
     ]);
-    return {...p, description, role, learnings};
+    return {...p, title, description, role, learnings};
 }
 
 export async function translateExperience(e: Experience, lang: "en" | "es"): Promise<Experience> {
-    const [title, description, ...achievements] = await Promise.all([
+    const [title, description, institution, company, ...achievements] = await Promise.all([
         autoTranslate(e.title, lang),
         autoTranslate(e.description, lang),
+        autoTranslate(e.institution, lang),
+        autoTranslate(e.company, lang),
         ...e.achievements.map((a) => autoTranslate(a, lang)),
     ]);
-    return {...e, title, description, achievements};
+    return {...e, title, description, institution, company, achievements};
+}
+
+export async function translateCert(c: Cert, lang: "en" | "es"): Promise<Cert> {
+    const [title, year] = await Promise.all([
+        autoTranslate(c.title, lang),
+        autoTranslate(c.year, lang),
+    ]);
+    return { ...c, title: title || c.title, year: year || c.year };
 }

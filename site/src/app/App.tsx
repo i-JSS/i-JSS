@@ -87,7 +87,7 @@ export default function App() {
                 </Suspense>
 
                 <Suspense fallback={<SectionSkeleton/>}>
-                    <EducationSection tr={tr}/>
+                    <EducationSection tr={tr} certs={data.certs} />
                 </Suspense>
             </main>
 

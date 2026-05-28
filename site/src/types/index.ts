@@ -31,6 +31,13 @@ export interface Experience {
     current: boolean;
 }
 
+export type Cert = {
+    title: string;
+    issuer: string;
+    year: string;
+    credential: string;
+};
+
 export interface AppData {
     projects: Project[];
     experiences: Experience[];

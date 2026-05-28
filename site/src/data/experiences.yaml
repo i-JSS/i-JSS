@@ -1,38 +1,8 @@
 experiences:
-  - title: "Assessor de Projetos"
-    company: "EngNet Consultoria"
-    institution: "EngNet Consultoria — Campus UnB Darcy Ribeiro"
-    start: "2025-11"
-    end: null
-    image: ""
-    description: >
-      Atuação como Assessor de Projetos na EngNet Consultoria, empresa júnior sediada na UnB,
-      com participação no ciclo completo de entrega de software: da concepção e reuniões com
-      clientes até o deploy em produção. Contribuí em frentes técnicas e estratégicas, incluindo
-      deploy de aplicativo iOS na App Store, precificação e análise de viabilidade de projetos
-      externos, reestruturação do processo de consultoria e construção de critérios de avaliação
-      do trainee backend. Desenvolveu visão de mercado real sobre como software é concebido,
-      precificado e entregue em ambiente corporativo.
-    technologies:
-      - React Native
-      - Firebase
-      - NestJS
-      - WordPress
-      - Nginx
-      - Vercel
-      - Docker
-      - Slack
-    achievements:
-      - "App Biônica publicado na App Store com conformidade legal e políticas de privacidade implementadas"
-      - "Suporte técnico-comercial estruturado para 5 oportunidades de contrato na consultoria"
-      - "Processo de consultoria reestruturado com artefatos sem redundâncias e entregas mais bem definidas"
-      - "Critérios de avaliação do trainee backend padronizados, garantindo equidade no processo seletivo"
-      - "Visão completa do ciclo de vida de software: concepção → requisitos → precificação → entrega → deploy"
-    current: true
 
   - title: "Pesquisador em Design de Serviços"
     company: "Projeto SPUX"
-    institution: "Laboratório ITRAC — Universidade de Brasília (UnB / FGA)"
+    institution: "Laboratório ITRAC - Universidade de Brasília (UnB / FGA)"
     start: "2025-09"
     end: null
     image: ""
@@ -57,89 +27,6 @@ experiences:
       - "Oficinas colaborativas realizadas com servidores públicos federais da SPU"
       - "Contribuição direta para metodologia SPUX adotada por órgão federal"
     current: true
-
-  - title: "Líder Técnico"
-    company: "UnBeatables RoboCup SPL"
-    institution: "Universidade de Brasília (UnB)"
-    start: "2025-07"
-    end: "2025-10"
-    image: ""
-    description: >
-      Selecionado como o membro com maior conhecimento técnico do time para liderar a UnBeatables
-      na maior competição de robótica do Brasil. Responsável pela estratégia técnica, alinhamento
-      da equipe e representação do time em competições nacionais. Além da competição, coordenei uma
-      exposição interativa no Hacktudo (Rio de Janeiro), onde crianças controlavam os robôs NAO via
-      controle de videogame, promovendo divulgação científica de forma lúdica.
-    technologies:
-      - C++
-      - Python
-      - SSH
-      - Sockets UDP/TCP
-      - Gentoo Linux
-    achievements:
-      - "1º lugar na Standard Platform League — Competição Brasileira de Robótica (CBR) 2025"
-      - "Exposição interativa com crianças realizada no Hacktudo Rio de Janeiro 2025"
-      - "Divulgação científica de robótica para público infantil em evento nacional"
-    current: false
-
-  - title: "Trainee Backend"
-    company: "EngNet Consultoria"
-    institution: "EngNet Consultoria"
-    start: "2025-09"
-    end: "2025-11"
-    image: ""
-    description: >
-      Participação em trilha técnica de desenvolvimento backend na EngNet Consultoria, progredindo
-      por quatro etapas estruturadas: fundamentos em JavaScript, modelagem de banco de dados com
-      MySQL, desenvolvimento de API REST com Express, e projeto em equipe para criação de um sistema
-      ERP interno. Na etapa final, atuei como responsável pelo backend do ERP, implementando
-      autenticação JWT com criptografia Argon2, middlewares de proteção em todas as rotas e pipelines
-      de CI/CD, entregando um sistema seguro, padronizado e pronto para produção.
-    technologies:
-      - NestJS
-      - Next.js
-      - Express
-      - JavaScript
-      - Swagger
-      - Nginx
-      - Docker
-      - MySQL
-      - PostgreSQL
-      - JWT
-      - Argon2
-    achievements:
-      - "Sistema ERP interno entregue com autenticação segura e middleware em todas as rotas"
-      - "Redução de retrabalho operacional via automação de processos no ERP"
-      - "Pipeline de CI/CD implementado, padronizando deploys da equipe"
-    current: false
-
-  - title: "Desenvolvedor Embarcado"
-    company: "UnBeatables RoboCup"
-    institution: "Universidade de Brasília (UnB) — Laboratórios LARA e LARSIS"
-    start: "2024-10"
-    end: "2025-07"
-    image: ""
-    description: >
-      Desenvolvimento de software embarcado para robôs humanoides NAO v4 e v6 (Aldebaran) nos
-      laboratórios LARA (Automação e Robótica) e LARSIS (Sistemas de Controle) da UnB. Atuei na
-      refatoração completa do código de competição, implementando arquitetura Blackboard para
-      comunicação entre múltiplas threads, operações atômicas para integridade do sistema, visão
-      computacional e scripts de automação em Gentoo Linux. O projeto também envolve divulgação
-      científica em escolas públicas e privadas.
-    technologies:
-      - C++
-      - Python
-      - SSH
-      - Sockets UDP/TCP
-      - Visão Computacional
-      - Gentoo Linux
-    achievements:
-      - "Refatoração completa do código de competição utilizado na RoboCup SPL"
-      - "Otimizações de comunicação em rede via compactação de pacotes e redução de overhead UDP"
-      - "Melhoria da eficiência de sincronização e troca de estado entre múltiplos robôs em tempo real"
-      - "Redução de latência em comunicação distribuída entre agentes robóticos"
-      - "Base técnica que levou o time ao 1º lugar na CBR SPL na temporada seguinte"
-    current: false
 
   - title: "Monitor Universitário"
     company: "Engenharia de Software"
@@ -168,3 +55,117 @@ experiences:
       - "5 disciplinas distintas cobrindo fundamentos, arquitetura, testes e infraestrutura"
       - "Capacidade de ensinar SOLID, Docker, TDD e CI/CD comprovada em contexto acadêmico"
     current: true
+
+  - title: "Assessor de Projetos"
+    company: "EngNet"
+    institution: "EngNet Consultoria - Campus UnB Darcy Ribeiro"
+    start: "2025-11"
+    end: null
+    image: ""
+    description: >
+      Atuação como Assessor de Projetos na EngNet Consultoria, empresa júnior sediada na UnB,
+      com participação no ciclo completo de entrega de software: da concepção e reuniões com
+      clientes até o deploy em produção. Contribuí em frentes técnicas e estratégicas, incluindo
+      deploy de aplicativo iOS na App Store, precificação e análise de viabilidade de projetos
+      externos, reestruturação do processo de consultoria e construção de critérios de avaliação
+      do trainee backend. Desenvolveu visão de mercado real sobre como software é concebido,
+      precificado e entregue em ambiente corporativo.
+    technologies:
+      - React Native
+      - Firebase
+      - NestJS
+      - WordPress
+      - Nginx
+      - Vercel
+      - Docker
+      - Slack
+    achievements:
+      - "App Biônica publicado na App Store com conformidade legal e políticas de privacidade implementadas"
+      - "Suporte técnico-comercial estruturado para 5 oportunidades de contrato na consultoria"
+      - "Processo de consultoria reestruturado com artefatos sem redundâncias e entregas mais bem definidas"
+      - "Critérios de avaliação do trainee backend padronizados, garantindo equidade no processo seletivo"
+      - "Visão completa do ciclo de vida de software: concepção → requisitos → precificação → entrega → deploy"
+    current: true
+
+  - title: "Trainee Backend"
+    company: "EngNet"
+    institution: "EngNet Consultoria - Campus UnB Darcy Ribeiro"
+    start: "2025-09"
+    end: "2025-11"
+    image: ""
+    description: >
+      Participação em trilha técnica de desenvolvimento backend na EngNet Consultoria, progredindo
+      por quatro etapas estruturadas: fundamentos em JavaScript, modelagem de banco de dados com
+      MySQL, desenvolvimento de API REST com Express, e projeto em equipe para criação de um sistema
+      ERP interno. Na etapa final, atuei como responsável pelo backend do ERP, implementando
+      autenticação JWT com criptografia Argon2, middlewares de proteção em todas as rotas e pipelines
+      de CI/CD, entregando um sistema seguro, padronizado e pronto para produção.
+    technologies:
+      - NestJS
+      - Next.js
+      - Express
+      - JavaScript
+      - Swagger
+      - Nginx
+      - Docker
+      - MySQL
+      - PostgreSQL
+      - JWT
+      - Argon2
+    achievements:
+      - "Sistema ERP interno entregue com autenticação segura e middleware em todas as rotas"
+      - "Redução de retrabalho operacional via automação de processos no ERP"
+      - "Pipeline de CI/CD implementado, padronizando deploys da equipe"
+    current: false
+
+  - title: "Líder Técnico"
+    company: "UnBeatables RoboCup SPL"
+    institution: "Universidade de Brasília (UnB)"
+    start: "2025-07"
+    end: "2025-10"
+    image: ""
+    description: >
+      Selecionado como o membro com maior conhecimento técnico do time para liderar a UnBeatables
+      na maior competição de robótica do Brasil. Responsável pela estratégia técnica, alinhamento
+      da equipe e representação do time em competições nacionais. Além da competição, coordenei uma
+      exposição interativa no Hacktudo (Rio de Janeiro), onde crianças controlavam os robôs NAO via
+      controle de videogame, promovendo divulgação científica de forma lúdica.
+    technologies:
+      - C++
+      - Python
+      - SSH
+      - Sockets UDP/TCP
+      - Gentoo Linux
+    achievements:
+      - "1º lugar na Standard Platform League — Competição Brasileira de Robótica (CBR) 2025"
+      - "Exposição interativa com crianças realizada no Hacktudo Rio de Janeiro 2025"
+      - "Divulgação científica de robótica para público infantil em evento nacional"
+    current: false
+
+  - title: "Desenvolvedor Embarcado"
+    company: "UnBeatables RoboCup"
+    institution: "Universidade de Brasília (UnB) - Laboratórios LARA e LARSIS"
+    start: "2024-10"
+    end: "2025-07"
+    image: ""
+    description: >
+      Desenvolvimento de software embarcado para robôs humanoides NAO v4 e v6 (Aldebaran) nos
+      laboratórios LARA (Automação e Robótica) e LARSIS (Sistemas de Controle) da UnB. Atuei na
+      refatoração completa do código de competição, implementando arquitetura Blackboard para
+      comunicação entre múltiplas threads, operações atômicas para integridade do sistema, visão
+      computacional e scripts de automação em Gentoo Linux. O projeto também envolve divulgação
+      científica em escolas públicas e privadas.
+    technologies:
+      - C++
+      - Python
+      - SSH
+      - Sockets UDP/TCP
+      - Visão Computacional
+      - Gentoo Linux
+    achievements:
+      - "Refatoração completa do código de competição utilizado na RoboCup SPL"
+      - "Otimizações de comunicação em rede via compactação de pacotes e redução de overhead UDP"
+      - "Melhoria da eficiência de sincronização e troca de estado entre múltiplos robôs em tempo real"
+      - "Redução de latência em comunicação distribuída entre agentes robóticos"
+      - "Base técnica que levou o time ao 1º lugar na CBR SPL na temporada seguinte"
+    current: false
