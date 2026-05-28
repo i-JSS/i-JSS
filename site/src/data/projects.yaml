@@ -75,7 +75,7 @@ projects:
       - Desenvolvimento de consultas SQL com filtros, agregações e ordenações
     role: "Desenvolvedor"
     duration: "5 horas"
-    image: "mysql.png"
+    image: "detran.jpg"
 
   - id: "6a133557508acd6a99d5c658"
     title: "2Getters – Engenharia de Requisitos do Uber"
@@ -315,7 +315,7 @@ projects:
       - Inspeção e validação de artefatos em equipe
     role: "Analista de Requisitos"
     duration: "30 horas"
-    image: "uml.png"
+    image: "quinto.png"
 
   - id: "6a1334eb508acd6a99d5c64c"
     title: "Compilador Pascal para MEPA"
@@ -420,7 +420,7 @@ projects:
       - Execução do ciclo completo de desenvolvimento de software
     role: "Desenvolvedor Solo"
     duration: "30 horas"
-    image: "solid.png"
+    image: "papo.png"
 
   - id: "6a133489508acd6a99d5c640"
     title: "Feudo – Amarelo Girassol"
@@ -506,3 +506,95 @@ projects:
     role: "Desenvolvedor"
     duration: "200 horas"
     image: "sbc.png"
+
+  - id: "6a179330a55f0067628b3b06"
+    title: "Logic Thinkering - Arquitetura de Software"
+    category: academic
+    description: >
+      Mod para Minecraft desenvolvido com Fabric que adiciona minérios reforçados, ferramentas,
+      armaduras e blocos de lógica redstone customizados. O projeto foi usado como terreno prático
+      para aplicar padrões de projeto GoF (Factory Method, Strategy, Observer, Singleton),
+      princípios SOLID e modelagem UML como contrato arquitetural. A stack Java + Kotlin foi uma
+      decisão consciente: Kotlin para null-safety e menos boilerplate, Java para compatibilidade
+      com a API do Fabric.
+    stack:
+      - Java
+      - Kotlin
+      - Fabric
+      - LibGui
+      - Gradle
+    repository: "https://github.com/i-JSS/Logic-Thinkering"
+    start: "2024-11-05"
+    end: "2026-01-06"
+    learnings:
+      - "Modelagem orientada a objetos com UML: diagramas de classes, sequência, estados e componentes"
+      - "Aplicação de princípios SOLID (SRP, OCP, DIP) no design de entidades e hierarquias de domínio"
+      - "Implementação de GoFs criacionais (Factory Method), estruturais (Composite) e comportamentais (Strategy, Observer, Singleton)"
+      - "Decisão arquitetural de interoperabilidade Java/Kotlin na JVM com foco em null-safety e redução de boilerplate"
+      - "Gerenciamento de dependências e build pipeline com Gradle em projeto multi-source JVM"
+      - "Desenvolvimento orientado a contratos arquiteturais derivados de modelagem UML"
+    docs:
+      - "https://unbarqdsw2024-2.github.io/2024.2_G1_Logic_Thinkering_Entrega_02/#/"
+      - "https://unbarqdsw2024-2.github.io/2024.2_G1_Logic_Thinkering_Entrega_03/#/"
+    role: "Arquiteto de Software"
+    duration: "60 horas"
+    image: "logic.png"
+
+  - id: "6a179323a55f0067628b3b04"
+    title: "Logic Thinkering - Engenharia de Requisitos"
+    category: academic
+    description: >
+      Engenharia de requisitos completa para um mod de Minecraft que introduz eletrônica e redstone
+      avançada ao jogo. Requisitos funcionais e não funcionais foram elicitados com Histórias de
+      Usuário, Personas e MoSCoW, estruturados com NFR Framework e rastreados via diagramas BPMN.
+      Viabilidade e riscos foram analisados com SWOT, Ishikawa e Planejamento de Riscos, com escopo
+      definido via 5W2H.
+    stack:
+      - Docsify
+      - Markdown
+      - BPMN
+      - GitHub Pages
+    repository: "https://github.com/UnBArqDsw2024-2/2024.2_G1_Logic_Thinkering_Entrega_01"
+    start: "2024-10-19"
+    end: "2024-11-04"
+    learnings:
+      - "Elicitação de requisitos funcionais e não funcionais com Histórias de Usuário, Personas e léxico de domínio"
+      - "Priorização de backlog com MoSCoW e estruturação de requisitos de qualidade com NFR Framework"
+      - "Modelagem de processos de negócio com BPMN para formalizar fluxos e rastreabilidade de requisitos"
+      - "Análise de risco e viabilidade com SWOT, Diagrama de Ishikawa e Planejamento de Riscos"
+      - "Documentação técnica colaborativa com versionamento via Git em equipe de 13 pessoas"
+    docs:
+      - "https://unbarqdsw2024-2.github.io/2024.2_G1_Logic_Thinkering_Entrega_01/#/"
+    role: "Engenheiro de Requisitos"
+    duration: "30 horas"
+    image: "logic.png"
+
+  - id: "6a179318a55f0067628b3b02"
+    title: "ChiquinhoAI — Assistente Acadêmico da UnB"
+    category: academic
+    description: >
+      Assistente de consulta institucional com arquitetura RAG (Retrieval-Augmented Generation).
+      O sistema coleta dados acadêmicos via web scraping, armazena embeddings em um banco vetorial
+      com Qdrant e utiliza o Google Gemini para responder perguntas dos usuários por meio de uma
+      interface web e de um bot no Telegram. A aplicação é containerizada com Docker em uma
+      arquitetura de microsserviços e foi deployada na plataforma Railway.
+    stack:
+      - Python
+      - FastAPI
+      - Qdrant
+      - Google Gemini
+      - Docker
+    repository: "https://github.com/unb-Sistemas-de-Machine-learning/Grupo2-ChiquinhoAI"
+    start: "2025-09-14"
+    end: "2025-12-07"
+    learnings:
+      - "Implementação de pipeline RAG com banco de dados vetorial e LLM"
+      - "Web scraping para coleta e ingestão de dados institucionais"
+      - "Arquitetura de microsserviços containerizada com Docker Compose"
+      - "Integração com APIs de LLM (Google Gemini) para geração de respostas"
+      - "Deploy de aplicação multi-serviço em plataforma cloud (Railway)"
+      - "Desenvolvimento de bot no Telegram como canal de interação com o usuário"
+      - "Colaboração em equipe utilizando Git e GitHub em repositório monorepo"
+    role: "Desenvolvedor"
+    duration: "40 horas"
+    image: "chiquinho.png"
