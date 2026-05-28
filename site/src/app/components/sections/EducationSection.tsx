@@ -69,7 +69,7 @@ const CertCard = memo(function CertCard({
                                             variants,
                                         }: CertCardProps) {
     const formattedYear = year.replace(
-        /^([a-záéíóúñ]+)(\/\d{4})$/i,
+        /^([a-záéíóúñç]+)(\/\d{4})$/i,
         (_, month, rest) => month.charAt(0).toUpperCase() + month.slice(1, 3).toLowerCase() + rest
     );
     return (
