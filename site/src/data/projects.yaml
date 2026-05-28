@@ -339,7 +339,7 @@ projects:
       - Implementação de suporte a funções, procedimentos e estruturas de controle
     role: "Desenvolvedor"
     duration: "40 horas"
-    image: "compilador.png"
+    image: "compilas.jpg"
 
   - id: "6a1334f7508acd6a99d5c650"
     title: "Prison Trading – Jogo com Banco de Dados Relacional"
