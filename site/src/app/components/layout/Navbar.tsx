@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
 import {AnimatePresence, motion} from "motion/react";
-import {Github, Globe, Linkedin, Menu, Moon, Sun, X} from "lucide-react";
+import {Github, Gitlab, Globe, Linkedin, Menu, Moon, Sun, X} from "lucide-react";
 import type {Translations} from "@/lib/i18n";
 import {LANG_LABELS} from "@/lib/i18n";
 import {scrollToSection} from "@/lib/scroll";
@@ -90,6 +90,16 @@ export default function Navbar({
                     </ul>
 
                     <div className="flex items-center gap-1.5">
+                        {/*<a*/}
+                        {/*    href="https://gitlab.com/i-JSS"*/}
+                        {/*    target="_blank"*/}
+                        {/*    rel="noopener noreferrer"*/}
+                        {/*    className="flex h-9 w-9 items-center justify-center rounded-lg border border-border hover:bg-secondary hover:border-primary/30 transition-all"*/}
+                        {/*    aria-label="GitLab profile"*/}
+                        {/*>*/}
+                        {/*    <Gitlab className="h-4 w-4" aria-hidden="true"/>*/}
+                        {/*</a>*/}
+
                         <a
                             href="https://github.com/i-JSS"
                             target="_blank"
