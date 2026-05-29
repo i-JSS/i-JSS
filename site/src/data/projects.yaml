@@ -155,7 +155,7 @@ projects:
       - Integração hardware-software em sistema embarcado físico
     role: "Desenvolvedor Embarcado"
     duration: "20 horas"
-    image: "irrigacao.jpeg"
+    image: "irrigacao.png"
 
   - id: "6a1334e4508acd6a99d5c64a"
     title: "B-Tree – Design by Contracts"
@@ -366,7 +366,7 @@ projects:
       - Monitoramento de desempenho com pg_stat_statements
     role: "Desenvolvedor Full Stack"
     duration: "60 horas"
-    image: "postgre.png"
+    image: "prison.png"
 
   - id: "6a1334fd508acd6a99d5c652"
     title: "KD Meu SS – Gerador de Grade Horária"
@@ -567,7 +567,7 @@ projects:
       - "https://unbarqdsw2024-2.github.io/2024.2_G1_Logic_Thinkering_Entrega_01/#/"
     role: "Engenheiro de Requisitos"
     duration: "30 horas"
-    image: "logic.png"
+    image: "logicrec.png"
 
   - id: "6a179318a55f0067628b3b02"
     title: "ChiquinhoAI — Assistente Acadêmico da UnB"
