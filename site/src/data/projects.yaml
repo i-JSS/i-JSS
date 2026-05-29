@@ -24,12 +24,12 @@ projects:
       - Deploy contínuo com publicação de imagens no Container Registry do GitLab
       - Integração de banco de dados PostgreSQL em ambiente containerizado
       - Boas práticas de DevOps com commits atômicos e entregas incrementais
-    role: "Desenvolvedor"
+    role: "Engenheiro DevOps"
     duration: "20 horas"
     image: "mk_gces.png"
 
   - id: "6a1335c5508acd6a99d5c65b"
-    title: "Pokédex – Consumo de REST API com JavaScript"
+    title: "Pokédex"
     category: professional
     description: >
       Pokédex interativa construída com JavaScript puro consumindo a PokéAPI para exibir e navegar
@@ -48,12 +48,12 @@ projects:
       - Paginação de API com parâmetros offset e limit
       - Manipulação dinâmica do DOM com dados externos
       - Tratamento e parsing de respostas JSON
-    role: "Desenvolvedor"
+    role: "Desenvolvedor Frontend"
     duration: "5 horas"
     image: "pokeapi.png"
 
   - id: "6a1335d2508acd6a99d5c65d"
-    title: "DETRAN Database – Modelagem Relacional"
+    title: "DETRAN Database"
     category: professional
     description: >
       Modelagem e implementação de banco de dados relacional para monitoramento de infrações de
@@ -73,12 +73,12 @@ projects:
       - Implementação física de banco relacional com MySQL
       - Escrita de scripts DDL para criação de tabelas e DML para população
       - Desenvolvimento de consultas SQL com filtros, agregações e ordenações
-    role: "Desenvolvedor"
+    role: "DBA"
     duration: "5 horas"
     image: "detran.jpg"
 
   - id: "6a133557508acd6a99d5c658"
-    title: "2Getters – Engenharia de Requisitos do Uber"
+    title: "2Getters – Requisitos do Uber"
     category: professional
     description: >
       Análise de requisitos do aplicativo Uber atuando como consultoria de software. Gerou artefatos
@@ -102,7 +102,7 @@ projects:
     image: "uber.png"
 
   - id: "6a133417508acd6a99d5c634"
-    title: "Vision Control NAO – Detecção de Obstáculos com Robô Humanoide"
+    title: "Vision Control NAO - Detecção de Obstáculos"
     category: academic
     description: >
       Sistema de visão computacional e controle remoto para o robô humanoide NAO, realizando
@@ -125,7 +125,7 @@ projects:
       - Arquitetura cliente-servidor para controle remoto de robôs
       - Backend robótico em Python com comunicação via NAOqi
       - Desenvolvimento sob restrições de ambiente legado com Python 2.7
-    role: "Desenvolvedor"
+    role: "Desenvolvedor Embarcado"
     duration: "10 horas"
     image: "nao.png"
 
@@ -158,7 +158,7 @@ projects:
     image: "irrigacao.jpeg"
 
   - id: "6a1334e4508acd6a99d5c64a"
-    title: "B-Tree – Implementação com Design by Contracts"
+    title: "B-Tree – Design by Contracts"
     category: academic
     description: >
       Implementação da estrutura de dados Árvore-B em Python com os algoritmos de inserção,
@@ -175,7 +175,7 @@ projects:
       - Aplicação de Design by Contracts com pré e pós-condições em Python
       - Garantia de corretude de algoritmos via contratos formais
       - Uso da biblioteca icontract para enforcement de contratos em Python
-    role: "Desenvolvedor"
+    role: "Desenvolvedor Backend"
     duration: "10 horas"
     image: "contract.png"
 
@@ -203,12 +203,12 @@ projects:
       - Integração Python com CoppeliaSim via API remota
       - Visualização e análise de trajetórias com Matplotlib
       - Modelagem matemática de sistemas robóticos móveis
-    role: "Desenvolvedor Solo"
+    role: "Engenheiro de Robótica"
     duration: "10 horas"
     image: "pioneer.png"
 
   - id: "6a133449508acd6a99d5c63a"
-    title: "X-Ray Controller – Controladora de Máquina de Raio-X"
+    title: "X-Ray Controller"
     category: academic
     description: >
       Controladora de máquina de raio-X em C++ executando em Raspberry Pi com arquitetura modular
@@ -238,7 +238,7 @@ projects:
     image: "xray.png"
 
   - id: "6a13345a508acd6a99d5c63c"
-    title: "UnBeatables – Código de Competição RoboCup SPL (NAOv6)"
+    title: "UnBeatables – Código de Competição RoboCup"
     category: competition
     description: >
       Contribuição ao código de competição da equipe UnBeatables do LARA/UnB na RoboCup Standard
@@ -263,12 +263,12 @@ projects:
       - Cooperação multi-agente entre robôs em ambiente competitivo
       - Trabalho em equipe em projeto de longa duração com padrões de código de competição internacional
       - Integração com SDK NAOqi para controle de atuadores e sensores do NAO
-    role: "Desenvolvedor de Software de Competição Embarcado"
+    role: "Desenvolvedor Embarcado"
     duration: "300 horas"
     image: "unbeatables.png"
 
   - id: "6a1334f1508acd6a99d5c64e"
-    title: "SIGAA Scraper"
+    title: "SIGAA_Scraper"
     category: personal
     description: >
       Web scraper desenvolvido em Python para extração de dados de turmas do portal SIGAA da UnB,
@@ -286,7 +286,7 @@ projects:
       - Persistência de dados estruturados em banco relacional PostgreSQL
       - Otimização de scraper com complexidade O(N) para minimizar requisições
       - Tratamento de dados HTML e estruturação para armazenamento
-    role: "Desenvolvedor"
+    role: "Desenvolvedor Backend"
     duration: "20 horas"
     image: "sigaa.png"
 
@@ -337,12 +337,12 @@ projects:
       - Geração de código intermediário para máquina hipotética
       - Estruturação de pipeline de compilação em múltiplas etapas
       - Implementação de suporte a funções, procedimentos e estruturas de controle
-    role: "Desenvolvedor"
+    role: "Engenheiro de Compiladores"
     duration: "40 horas"
     image: "compilas.jpg"
 
   - id: "6a1334f7508acd6a99d5c650"
-    title: "Prison Trading – Jogo com Banco de Dados Relacional"
+    title: "Prison Trading - Jogo de estratégia"
     category: academic
     description: >
       Jogo de estratégia e simulação em Python com banco de dados PostgreSQL como núcleo central,
@@ -364,7 +364,7 @@ projects:
       - Implementação de triggers, stored procedures e views em PL/pgSQL
       - Uso de pgAgent para agendamento de tarefas no banco
       - Monitoramento de desempenho com pg_stat_statements
-    role: "Desenvolvedor / DBA"
+    role: "Desenvolvedor Full Stack"
     duration: "60 horas"
     image: "postgre.png"
 
@@ -389,7 +389,7 @@ projects:
       - Construção de frontend com TypeScript, HTML e CSS
       - Integração entre backend e frontend em arquitetura full-stack
       - Gerenciamento de dependências e build com Maven
-    role: "Desenvolvedor"
+    role: "Desenvolvedor Full Stack"
     duration: "25 horas"
     image: "kdmeuss.png"
 
@@ -418,7 +418,7 @@ projects:
       - Escrita de testes unitários utilizando JUnit
       - Documentação técnica utilizando Javadoc
       - Execução do ciclo completo de desenvolvimento de software
-    role: "Desenvolvedor Solo"
+    role: "Desenvolvedor Desktop"
     duration: "30 horas"
     image: "papo.png"
 
@@ -446,7 +446,7 @@ projects:
       - Implementação de lógica de estados e fluxo de jogo
       - Uso de TypeScript em projetos JavaScript
       - Colaboração em equipe utilizando Git e GitHub
-    role: "Desenvolvedor Backend"
+    role: "Desenvolvedor Full Stack"
     duration: "30 horas"
     image: "feudo.png"
 
@@ -476,7 +476,7 @@ projects:
       - Visualização de dados estatísticos e geoespaciais
       - Processamento de mapas utilizando GeoJSON
       - Colaboração em equipe utilizando Git e GitHub
-    role: "Desenvolvedor"
+    role: "Engenheiro de Dados"
     duration: "30 horas"
     image: "apc.png"
 
@@ -503,7 +503,7 @@ projects:
       - Programação de baixo nível com Assembly RISC-V
       - Participação em maratonas de programação em equipe
       - Escrita de soluções em múltiplas linguagens de programação
-    role: "Desenvolvedor"
+    role: "Programador Competitivo"
     duration: "200 horas"
     image: "sbc.png"
 
@@ -541,7 +541,7 @@ projects:
     image: "logic.png"
 
   - id: "6a179323a55f0067628b3b04"
-    title: "Logic Thinkering - Engenharia de Requisitos"
+    title: "Logic Thinkering - Requisitos"
     category: academic
     description: >
       Engenharia de requisitos completa para um mod de Minecraft que introduz eletrônica e redstone
@@ -595,6 +595,6 @@ projects:
       - "Deploy de aplicação multi-serviço em plataforma cloud (Railway)"
       - "Desenvolvimento de bot no Telegram como canal de interação com o usuário"
       - "Colaboração em equipe utilizando Git e GitHub em repositório monorepo"
-    role: "Desenvolvedor"
+    role: "Engenheiro de ML"
     duration: "40 horas"
     image: "chiquinho.png"

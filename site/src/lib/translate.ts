@@ -36,13 +36,14 @@ async function autoTranslate(text: string, lang: "en" | "es"): Promise<string> {
 }
 
 export async function translateProject(p: Project, lang: "en" | "es"): Promise<Project> {
-    const [title, description, role, ...learnings] = await Promise.all([
+    const [title, description, role, duration, ...learnings] = await Promise.all([
         autoTranslate(p.title, lang),
         autoTranslate(p.description, lang),
         autoTranslate(p.role, lang),
+        autoTranslate(p.duration, lang),
         ...p.learnings.map((l) => autoTranslate(l, lang)),
     ]);
-    return {...p, title, description, role, learnings};
+    return {...p, title, description, role, duration, learnings};
 }
 
 export async function translateExperience(e: Experience, lang: "en" | "es"): Promise<Experience> {
