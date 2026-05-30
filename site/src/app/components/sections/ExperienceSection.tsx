@@ -15,6 +15,11 @@ interface ExperienceItemProps {
     tr: Translations["experience"];
 }
 
+const experiencesImages = import.meta.glob("@/assets/icons/*", {
+    eager: true,
+    import: "default",
+}) as Record<string, string>;
+
 const ExperienceItem = memo(function ExperienceItem({
                                                         exp,
                                                         index,
@@ -51,26 +56,37 @@ const ExperienceItem = memo(function ExperienceItem({
             )}
 
             <div
-                className={`rounded-xl border bg-card p-6 transition-all duration-200 shadow-sm ${
+                className={`rounded-xl border bg-card p-6 transition-all duration-200 shadow-sm overflow-hidden ${
                     expanded ? "border-primary/40 shadow-md" : "border-border"
                 }`}
             >
                 {/* Header - always visible */}
-                <div className="flex items-start justify-between gap-4">
-                    <div>
-                        <h3 className="font-bold text-base">{exp.title}</h3>
-                        <p className="text-sm text-muted-foreground mt-0.5">{exp.company}</p>
-                        <p className="text-xs text-muted-foreground/70 mt-0.5">{exp.institution}</p>
+                <div className="flex items-start justify-between gap-4 relative">
+                    {/* Ícone watermark */}
+                    {exp.image && experiencesImages[`/src/assets/icons/${exp.image}`] && (
+                        <img
+                            src={experiencesImages[`/src/assets/icons/${exp.image}`]}
+                            alt=""
+                            aria-hidden="true"
+                            className="absolute -left-11 top-1/2 -translate-y-1/2 w-20 h-20 object-contain opacity-30 pointer-events-none select-none"                        />
+                    )}
+
+                    <div className="flex items-center gap-3 pl-10">
+                        <div>
+                            <h3 className="font-bold text-base">{exp.title}</h3>
+                            <p className="text-sm text-muted-foreground mt-0.5">{exp.company}</p>
+                            <p className="text-xs text-muted-foreground/70 mt-0.5">{exp.institution}</p>
+                        </div>
                     </div>
+
                     <div className="text-right shrink-0">
                         <p className="text-xs font-mono text-muted-foreground">
-                            {exp.start} - {exp.end ?? tr.present}
+                            {formatDate(exp.start)} - {exp.end ? formatDate(exp.end) : tr.present}
                         </p>
                         {exp.current && (
-                            <span
-                                className="inline-block mt-1.5 rounded-full bg-green-500/10 border border-green-500/20 px-2.5 py-0.5 text-[10px] text-green-500 font-medium">
+                            <span className="inline-block mt-1.5 rounded-full bg-green-500/10 border border-green-500/20 px-2.5 py-0.5 text-[10px] text-green-500 font-medium">
                 {tr.current}
-              </span>
+            </span>
                         )}
                     </div>
                 </div>
@@ -133,6 +149,11 @@ const ExperienceItem = memo(function ExperienceItem({
 interface ExperienceSectionProps {
     experiences: Experience[];
     tr: Translations;
+}
+
+function formatDate(yyyyMM: string): string {
+    const [year, month] = yyyyMM.split("-");
+    return `${month}/${year}`;
 }
 
 function sortExperiences(list: Experience[]): Experience[] {

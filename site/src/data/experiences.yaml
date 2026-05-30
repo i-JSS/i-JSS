@@ -2,13 +2,13 @@ experiences:
 
   - title: "Pesquisador em Design de Serviços"
     company: "Projeto SPUX"
-    institution: "Laboratório ITRAC - Universidade de Brasília (UnB / FGA)"
+    institution: "Information Technology, Research and Application Center - ITRAC"
     start: "2025-09"
     end: null
-    image: ""
+    image: "itrac.svg"
     description: >
       Pesquisador bolsista no projeto de PD&I 'Metodologia Colaborativa de Transformação Digital
-      para a SPU com base em Design de Serviços e Experiência do Usuário — SPUX', fruto de parceria
+      para a SPU com base em Design de Serviços e Experiência do Usuário - SPUX', fruto de parceria
       entre o Laboratório ITRAC da Faculdade de Ciências e Tecnologias em Engenharia da UnB e a
       Coordenação-Geral de Transformação Digital (CGDIG) da SPU/MGI. Atuei na ponte entre equipes
       de desenvolvimento ágil e stakeholders governamentais, conduzindo pesquisa aplicada, elicitação
@@ -30,16 +30,16 @@ experiences:
 
   - title: "Monitor Universitário"
     company: "Engenharia de Software"
-    institution: "Universidade de Brasília (UnB / FGA)"
+    institution: "Faculdade de Ciências e Tecnologias em Engenharia - Universidade de Brasília"
     start: "2023-03"
     end: null
-    image: ""
+    image: "unb.png"
     description: >
       Atuação contínua como monitor em disciplinas do curso de Engenharia de Software da UnB desde
       2023, cobrindo cinco disciplinas ao longo de seis semestres. Responsável por atendimento a
       alunos, correção de trabalhos e provas, e criação de material de apoio. A sequência de
-      monitorias em disciplinas progressivamente mais complexas — de fundamentos a arquitetura e
-      gerência de configuração — evidencia domínio técnico consolidado e capacidade de transmitir
+      monitorias em disciplinas progressivamente mais complexas - de fundamentos a arquitetura e
+      gerência de configuração - evidencia domínio técnico consolidado e capacidade de transmitir
       conhecimento em diferentes níveis de abstração.
     technologies:
       - Docker
@@ -57,11 +57,11 @@ experiences:
     current: true
 
   - title: "Assessor de Projetos"
-    company: "EngNet"
-    institution: "EngNet Consultoria - Campus UnB Darcy Ribeiro"
+    company: "EngNet Consultoria"
+    institution: "Empresa Júnior de Engenharia de Redes de Comunicação - Universidade de Brasília"
     start: "2025-11"
-    end: null
-    image: ""
+    end: "2026-06"
+    image: "engnet.svg"
     description: >
       Atuação como Assessor de Projetos na EngNet Consultoria, empresa júnior sediada na UnB,
       com participação no ciclo completo de entrega de software: da concepção e reuniões com
@@ -85,14 +85,14 @@ experiences:
       - "Processo de consultoria reestruturado com artefatos sem redundâncias e entregas mais bem definidas"
       - "Critérios de avaliação do trainee backend padronizados, garantindo equidade no processo seletivo"
       - "Visão completa do ciclo de vida de software: concepção → requisitos → precificação → entrega → deploy"
-    current: true
+    current: false
 
   - title: "Trainee Backend"
-    company: "EngNet"
-    institution: "EngNet Consultoria - Campus UnB Darcy Ribeiro"
+    company: "EngNet Consultoria"
+    institution: "Empresa Júnior de Engenharia de Redes de Comunicação - Universidade de Brasília"
     start: "2025-09"
     end: "2025-11"
-    image: ""
+    image: "engnet.svg"
     description: >
       Participação em trilha técnica de desenvolvimento backend na EngNet Consultoria, progredindo
       por quatro etapas estruturadas: fundamentos em JavaScript, modelagem de banco de dados com
@@ -119,11 +119,11 @@ experiences:
     current: false
 
   - title: "Líder Técnico"
-    company: "UnBeatables RoboCup SPL"
-    institution: "Universidade de Brasília (UnB)"
+    company: "UnBeatables"
+    institution: "Labs. de Automação e Robótica (LARA) e Sistemas de Controle (LARSIS)"
     start: "2025-07"
     end: "2025-10"
-    image: ""
+    image: "unbeatables.svg"
     description: >
       Selecionado como o membro com maior conhecimento técnico do time para liderar a UnBeatables
       na maior competição de robótica do Brasil. Responsável pela estratégia técnica, alinhamento
@@ -137,17 +137,17 @@ experiences:
       - Sockets UDP/TCP
       - Gentoo Linux
     achievements:
-      - "1º lugar na Standard Platform League — Competição Brasileira de Robótica (CBR) 2025"
+      - "1º lugar na Standard Platform League - Competição Brasileira de Robótica (CBR) 2025"
       - "Exposição interativa com crianças realizada no Hacktudo Rio de Janeiro 2025"
       - "Divulgação científica de robótica para público infantil em evento nacional"
     current: false
 
   - title: "Desenvolvedor Embarcado"
-    company: "UnBeatables RoboCup"
-    institution: "Universidade de Brasília (UnB) - Laboratórios LARA e LARSIS"
+    company: "UnBeatables"
+    institution: "Labs. de Automação e Robótica (LARA) e Sistemas de Controle (LARSIS)"
     start: "2024-10"
     end: "2025-07"
-    image: ""
+    image: "unbeatables.svg"
     description: >
       Desenvolvimento de software embarcado para robôs humanoides NAO v4 e v6 (Aldebaran) nos
       laboratórios LARA (Automação e Robótica) e LARSIS (Sistemas de Controle) da UnB. Atuei na
