@@ -66,7 +66,7 @@ export default function Navbar({
                             handleNav("#sobre");
                         }}
                         className="font-black text-sm tracking-widest uppercase shrink-0 font-mono focus-visible:outline-primary"
-                        aria-label="João Ginuino — go to top"
+                        aria-label="João Ginuino - go to top"
                     >
                         JG
                     </a>

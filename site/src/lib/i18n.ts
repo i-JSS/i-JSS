@@ -49,7 +49,7 @@ const i18n = {
             certs_label: "Certificações",
             degree: "Engenharia de Software",
             university: "Universidade de Brasília",
-            period: "2022 — Presente",
+            period: "2022 - Presente",
             areas_label: "Áreas relevantes:",
             areas: [
                 "Sistemas Embarcados",
@@ -122,7 +122,7 @@ const i18n = {
             certs_label: "Certifications",
             degree: "Software Engineering",
             university: "University of Brasília",
-            period: "2022 — Present",
+            period: "2022 - Present",
             areas_label: "Relevant areas:",
             areas: [
                 "Embedded Systems",
@@ -195,7 +195,7 @@ const i18n = {
             certs_label: "Certificaciones",
             degree: "Ingeniería de Software",
             university: "Universidad de Brasilia",
-            period: "2022 — Presente",
+            period: "2022 - Presente",
             areas_label: "Áreas relevantes:",
             areas: [
                 "Sistemas Embebidos",

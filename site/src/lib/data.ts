@@ -1,5 +1,5 @@
 import yaml from "js-yaml";
-// @ts-ignore — Vite ?raw imports are typed via vite/client
+// @ts-ignore - Vite ?raw imports are typed via vite/client
 import projectsRaw from "@/data/projects.yaml?raw";
 // @ts-ignore
 import experiencesRaw from "@/data/experiences.yaml?raw";

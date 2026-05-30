@@ -55,7 +55,7 @@ const ExperienceItem = memo(function ExperienceItem({
                     expanded ? "border-primary/40 shadow-md" : "border-border"
                 }`}
             >
-                {/* Header — always visible */}
+                {/* Header - always visible */}
                 <div className="flex items-start justify-between gap-4">
                     <div>
                         <h3 className="font-bold text-base">{exp.title}</h3>
@@ -64,7 +64,7 @@ const ExperienceItem = memo(function ExperienceItem({
                     </div>
                     <div className="text-right shrink-0">
                         <p className="text-xs font-mono text-muted-foreground">
-                            {exp.start} — {exp.end ?? tr.present}
+                            {exp.start} - {exp.end ?? tr.present}
                         </p>
                         {exp.current && (
                             <span

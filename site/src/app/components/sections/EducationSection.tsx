@@ -7,7 +7,7 @@ import type {Translations} from "@/lib/i18n";
 import unbImage from "../../../assets/unb.png";
 import cnaImage from "../../../assets/cna.png";
 import ndImage from "../../../assets/notredame.png";
-import { CERTS } from "../../../data/certifications"
+import {CERTS} from "../../../data/certifications"
 
 // ─── Education card (reusable for UnB + CNA) ─────────────────────────────────
 
@@ -130,7 +130,7 @@ export default function EducationSection({tr}: EducationSectionProps) {
 
                 <div className="grid lg:grid-cols-2 gap-10">
 
-                    {/* Left — Formação + Idiomas */}
+                    {/* Left - Formação + Idiomas */}
                     <motion.div
                         className="flex flex-col gap-8"
                         variants={staggerParent(0.15)}

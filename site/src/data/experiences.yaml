@@ -1,7 +1,7 @@
 experiences:
   - title: "Assessor de Projetos"
     company: "EngNet Consultoria"
-    institution: "EngNet Consultoria — Campus UnB Darcy Ribeiro"
+    institution: "EngNet Consultoria - Campus UnB Darcy Ribeiro"
     start: "2025-11"
     end: null
     image: ""
@@ -32,13 +32,13 @@ experiences:
 
   - title: "Pesquisador em Design de Serviços"
     company: "Projeto SPUX"
-    institution: "Laboratório ITRAC — Universidade de Brasília (UnB / FGA)"
+    institution: "Laboratório ITRAC - Universidade de Brasília (UnB / FGA)"
     start: "2025-09"
     end: null
     image: ""
     description: >
       Pesquisador bolsista no projeto de PD&I 'Metodologia Colaborativa de Transformação Digital
-      para a SPU com base em Design de Serviços e Experiência do Usuário — SPUX', fruto de parceria
+      para a SPU com base em Design de Serviços e Experiência do Usuário - SPUX', fruto de parceria
       entre o Laboratório ITRAC da Faculdade de Ciências e Tecnologias em Engenharia da UnB e a
       Coordenação-Geral de Transformação Digital (CGDIG) da SPU/MGI. Atuei na ponte entre equipes
       de desenvolvimento ágil e stakeholders governamentais, conduzindo pesquisa aplicada, elicitação
@@ -77,7 +77,7 @@ experiences:
       - Sockets UDP/TCP
       - Gentoo Linux
     achievements:
-      - "1º lugar na Standard Platform League — Competição Brasileira de Robótica (CBR) 2025"
+      - "1º lugar na Standard Platform League - Competição Brasileira de Robótica (CBR) 2025"
       - "Exposição interativa com crianças realizada no Hacktudo Rio de Janeiro 2025"
       - "Divulgação científica de robótica para público infantil em evento nacional"
     current: false
@@ -115,7 +115,7 @@ experiences:
 
   - title: "Desenvolvedor Embarcado"
     company: "UnBeatables RoboCup"
-    institution: "Universidade de Brasília (UnB) — Laboratórios LARA e LARSIS"
+    institution: "Universidade de Brasília (UnB) - Laboratórios LARA e LARSIS"
     start: "2024-10"
     end: "2025-07"
     image: ""
@@ -151,8 +151,8 @@ experiences:
       Atuação contínua como monitor em disciplinas do curso de Engenharia de Software da UnB desde
       2023, cobrindo cinco disciplinas ao longo de seis semestres. Responsável por atendimento a
       alunos, correção de trabalhos e provas, e criação de material de apoio. A sequência de
-      monitorias em disciplinas progressivamente mais complexas — de fundamentos a arquitetura e
-      gerência de configuração — evidencia domínio técnico consolidado e capacidade de transmitir
+      monitorias em disciplinas progressivamente mais complexas - de fundamentos a arquitetura e
+      gerência de configuração - evidencia domínio técnico consolidado e capacidade de transmitir
       conhecimento em diferentes níveis de abstração.
     technologies:
       - Docker

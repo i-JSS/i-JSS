@@ -570,7 +570,7 @@ projects:
     image: "logic.png"
 
   - id: "6a179318a55f0067628b3b02"
-    title: "ChiquinhoAI — Assistente Acadêmico da UnB"
+    title: "ChiquinhoAI - Assistente Acadêmico da UnB"
     category: academic
     description: >
       Assistente de consulta institucional com arquitetura RAG (Retrieval-Augmented Generation).

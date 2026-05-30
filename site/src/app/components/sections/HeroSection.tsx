@@ -41,7 +41,7 @@ export default function HeroSection({tr, totalProjects, totalExperiences}: HeroS
                 }}
             />
 
-            {/* Oversized faded name — editorial backdrop */}
+            {/* Oversized faded name - editorial backdrop */}
             <div
                 aria-hidden="true"
                 className="pointer-events-none select-none absolute inset-0 flex items-center justify-center overflow-hidden"

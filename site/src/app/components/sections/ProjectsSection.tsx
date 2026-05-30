@@ -271,7 +271,7 @@ export default function ProjectsSection({
             <div className="mx-auto max-w-7xl">
                 <div className="grid lg:grid-cols-2 gap-8 items-start">
 
-                    {/* Left — header + filters + list */}
+                    {/* Left - header + filters + list */}
                     <div className="min-w-0">
                         <motion.div
                             className="relative mb-8"

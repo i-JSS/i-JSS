@@ -3,7 +3,7 @@
 :root {
     --font-size: 16px;
 
-    /* Light mode — white canvas, elevated gray surfaces */
+    /* Light mode - white canvas, elevated gray surfaces */
     --background: #ffffff;
     --foreground: #0a0a0a;
     --card: #f1f1f1;
@@ -55,7 +55,7 @@
 }
 
 .dark {
-    /* Dark mode — near-black system with layered elevation */
+    /* Dark mode - near-black system with layered elevation */
     --background: #090909;
     --foreground: #ededed;
     --card: #141414;

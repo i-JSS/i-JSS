@@ -78,9 +78,9 @@
 
 Right now I'm deepening my expertise in **AI tooling and infrastructure**, with a focus on:
 
-- **MCP (Model Context Protocol)** — building agents and integrations that connect LLMs to real-world tools and APIs.
-- **AI Engineering** — working with RAG pipelines, chatbots, and LLM-powered workflows in production.
-- **CI/CD** *(mastered)* — automated pipelines, GitHub Actions (published to Marketplace), and continuous delivery practices.
+- **MCP (Model Context Protocol)** - building agents and integrations that connect LLMs to real-world tools and APIs.
+- **AI Engineering** - working with RAG pipelines, chatbots, and LLM-powered workflows in production.
+- **CI/CD** *(mastered)* - automated pipelines, GitHub Actions (published to Marketplace), and continuous delivery practices.
 
 ---
 
