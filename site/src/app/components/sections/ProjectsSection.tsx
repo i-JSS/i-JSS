@@ -84,7 +84,7 @@ const ProjectList = memo(function ProjectList({
             {projects.map((project) => (
                 <motion.li key={project.id} variants={slide}>
                     <button
-                        className={`group w-full text-left cursor-pointer rounded-xl border px-6 py-4 transition-all duration-200 ${
+                        className={`relative group w-full min-w-0 text-left cursor-pointer rounded-xl border px-6 py-4 transition-all duration-200 ${
                             selectedId === project.id
                                 ? "border-primary bg-card shadow-md shadow-primary/5"
                                 : "border-transparent hover:border-border hover:bg-card/60"
@@ -93,27 +93,30 @@ const ProjectList = memo(function ProjectList({
                         onClick={() => onSelect(project)}
                         aria-pressed={selectedId === project.id}
                     >
-                        <div className="flex items-center justify-between gap-4">
-                            <div className="flex items-center gap-4 min-w-0">
+                        <div className="flex items-start justify-between gap-4">
+                            <div className="flex items-center gap-4 min-w-0 flex-1">
                                 <div
                                     aria-hidden="true"
-                                    className={`h-1.5 w-1.5 rounded-full shrink-0 transition-colors ${
+                                    className={`h-1.5 w-1.5 rounded-full shrink-0 transition-colors mt-1 ${
                                         selectedId === project.id
                                             ? "bg-primary"
                                             : "bg-border group-hover:bg-muted-foreground"
                                     }`}
                                 />
-                                <div className="min-w-0">
+                                <div className="min-w-0 flex-1">
                                     <p className="font-semibold text-sm truncate">{project.title}</p>
                                     <p className="text-xs text-muted-foreground capitalize mt-0.5">
                                         {categoryLabel(project.category)}
                                     </p>
                                 </div>
                             </div>
-                            <span className="text-xs text-muted-foreground font-mono shrink-0">
+                            <span className="text-xs text-muted-foreground font-mono whitespace-nowrap shrink-0">
                 {project.duration}
-              </span>
+            </span>
                         </div>
+                        <span className="absolute bottom-4 right-6 text-xs text-muted-foreground/90 font-mono pointer-events-none">
+            {project.role}
+        </span>
                     </button>
                 </motion.li>
             ))}

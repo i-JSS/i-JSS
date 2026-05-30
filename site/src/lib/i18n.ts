@@ -132,7 +132,7 @@ const i18n = {
             ],
             cna_meta: {
                 status: "In Progress",
-                local: "CNA Idiomas",
+                local: "CNA Languages",
                 nome: "English",
             },
             nd_meta: {

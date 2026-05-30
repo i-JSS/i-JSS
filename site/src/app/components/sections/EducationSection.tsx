@@ -7,7 +7,7 @@ import type {Translations} from "@/lib/i18n";
 import unbImage from "../../../assets/unb.png";
 import cnaImage from "../../../assets/cna.png";
 import ndImage from "../../../assets/notredame.png";
-import {CERTS} from "../../../data/certifications"
+import type {Cert} from "@/types";
 
 // ─── Education card (reusable for UnB + CNA) ─────────────────────────────────
 
@@ -68,6 +68,10 @@ const CertCard = memo(function CertCard({
                                             credential,
                                             variants,
                                         }: CertCardProps) {
+    const formattedYear = year.replace(
+        /^([a-záéíóúñç]+)(\/\d{4})$/i,
+        (_, month, rest) => month.charAt(0).toUpperCase() + month.slice(1, 3).toLowerCase() + rest
+    );
     return (
         <motion.div
             variants={variants}
@@ -81,7 +85,7 @@ const CertCard = memo(function CertCard({
                     <p className="text-xs text-muted-foreground truncate">{issuer}</p>
                 </div>
                 <div className="flex items-center gap-2.5 shrink-0">
-                    <span className="text-xs font-mono font-medium text-foreground">{year}</span>
+                    <span className="text-xs font-mono font-medium text-foreground">{formattedYear}</span>
                     <a
                         href={credential}
                         target="_blank"
@@ -101,9 +105,10 @@ const CertCard = memo(function CertCard({
 
 interface EducationSectionProps {
     tr: Translations;
+    certs: Cert[];
 }
 
-export default function EducationSection({tr}: EducationSectionProps) {
+export default function EducationSection({tr, certs}: EducationSectionProps) {
     const reduced = useReducedMotion();
     const headerV = pick(reduced, fadeUp, fadeUpReduced);
     const cardV = pick(reduced, fadeUpChild, fadeUpChildReduced);
@@ -234,8 +239,8 @@ export default function EducationSection({tr}: EducationSectionProps) {
                         </motion.p>
 
                         <div className="space-y-4">
-                            {CERTS.map((cert) => (
-                                <CertCard key={cert.title} {...cert} variants={cardV}/>
+                            {certs.map((cert, i) => (
+                                <CertCard key={i} {...cert} variants={cardV}/>
                             ))}
                         </div>
                     </motion.div>

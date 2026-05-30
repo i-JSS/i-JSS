@@ -1,4 +1,4 @@
-import {Github, Linkedin, Mail, MapPin, Moon, Sun} from "lucide-react";
+import {Github, Gitlab, Linkedin, Mail, MapPin, Moon, Sun} from "lucide-react";
 import type {Theme} from "@/types";
 import type {Translations} from "@/lib/i18n";
 
@@ -35,6 +35,12 @@ export default function Footer({tr, theme, toggleTheme}: FooterProps) {
                         <nav aria-label="Footer links">
                             <ul className="flex flex-wrap gap-3 list-none">
                                 {[
+                                    {
+                                        href: "https://gitlab.com/i-JSS",
+                                        icon: <Gitlab className="h-3.5 w-3.5" aria-hidden="true"/>,
+                                        label: "GitLab",
+                                        external: true,
+                                    },
                                     {
                                         href: "https://github.com/i-JSS",
                                         icon: <Github className="h-3.5 w-3.5" aria-hidden="true"/>,

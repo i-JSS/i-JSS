@@ -1,6 +1,63 @@
 experiences:
+
+  - title: "Pesquisador em Design de Serviços"
+    company: "Projeto SPUX"
+    institution: "Laboratório ITRAC - Universidade de Brasília (UnB / FGA)"
+    start: "2025-09"
+    end: null
+    image: ""
+    description: >
+      Pesquisador bolsista no projeto de PD&I 'Metodologia Colaborativa de Transformação Digital
+      para a SPU com base em Design de Serviços e Experiência do Usuário — SPUX', fruto de parceria
+      entre o Laboratório ITRAC da Faculdade de Ciências e Tecnologias em Engenharia da UnB e a
+      Coordenação-Geral de Transformação Digital (CGDIG) da SPU/MGI. Atuei na ponte entre equipes
+      de desenvolvimento ágil e stakeholders governamentais, conduzindo pesquisa aplicada, elicitação
+      de requisitos, produção científica e facilitação de oficinas colaborativas de codesign e
+      cocriação com servidores públicos e cidadãos, com foco em transformação digital centrada no
+      usuário em contexto de serviço público.
+    technologies:
+      - NestJS
+      - MkDocs
+      - WordPress
+      - Redmine
+      - Kanban
+    achievements:
+      - "Artigo publicado em conferência nacional (SBQS)"
+      - "Mais de 15 templates de engenharia de requisitos criados e disponibilizados"
+      - "Oficinas colaborativas realizadas com servidores públicos federais da SPU"
+      - "Contribuição direta para metodologia SPUX adotada por órgão federal"
+    current: true
+
+  - title: "Monitor Universitário"
+    company: "Engenharia de Software"
+    institution: "Universidade de Brasília (UnB / FGA)"
+    start: "2023-03"
+    end: null
+    image: ""
+    description: >
+      Atuação contínua como monitor em disciplinas do curso de Engenharia de Software da UnB desde
+      2023, cobrindo cinco disciplinas ao longo de seis semestres. Responsável por atendimento a
+      alunos, correção de trabalhos e provas, e criação de material de apoio. A sequência de
+      monitorias em disciplinas progressivamente mais complexas — de fundamentos a arquitetura e
+      gerência de configuração — evidencia domínio técnico consolidado e capacidade de transmitir
+      conhecimento em diferentes níveis de abstração.
+    technologies:
+      - Docker
+      - Git
+      - CI/CD
+      - SOLID
+      - Design Patterns
+      - TDD
+      - Jest
+      - GitHub Actions
+    achievements:
+      - "6 semestres consecutivos de monitoria em disciplinas de Engenharia de Software"
+      - "5 disciplinas distintas cobrindo fundamentos, arquitetura, testes e infraestrutura"
+      - "Capacidade de ensinar SOLID, Docker, TDD e CI/CD comprovada em contexto acadêmico"
+    current: true
+
   - title: "Assessor de Projetos"
-    company: "EngNet Consultoria"
+    company: "EngNet"
     institution: "EngNet Consultoria - Campus UnB Darcy Ribeiro"
     start: "2025-11"
     end: null
@@ -30,61 +87,9 @@ experiences:
       - "Visão completa do ciclo de vida de software: concepção → requisitos → precificação → entrega → deploy"
     current: true
 
-  - title: "Pesquisador em Design de Serviços"
-    company: "Projeto SPUX"
-    institution: "Laboratório ITRAC - Universidade de Brasília (UnB / FGA)"
-    start: "2025-09"
-    end: null
-    image: ""
-    description: >
-      Pesquisador bolsista no projeto de PD&I 'Metodologia Colaborativa de Transformação Digital
-      para a SPU com base em Design de Serviços e Experiência do Usuário - SPUX', fruto de parceria
-      entre o Laboratório ITRAC da Faculdade de Ciências e Tecnologias em Engenharia da UnB e a
-      Coordenação-Geral de Transformação Digital (CGDIG) da SPU/MGI. Atuei na ponte entre equipes
-      de desenvolvimento ágil e stakeholders governamentais, conduzindo pesquisa aplicada, elicitação
-      de requisitos, produção científica e facilitação de oficinas colaborativas de codesign e
-      cocriação com servidores públicos e cidadãos, com foco em transformação digital centrada no
-      usuário em contexto de serviço público.
-    technologies:
-      - NestJS
-      - MkDocs
-      - WordPress
-      - Redmine
-      - Kanban
-    achievements:
-      - "Artigo publicado em conferência nacional (SBQS)"
-      - "Mais de 15 templates de engenharia de requisitos criados e disponibilizados"
-      - "Oficinas colaborativas realizadas com servidores públicos federais da SPU"
-      - "Contribuição direta para metodologia SPUX adotada por órgão federal"
-    current: true
-
-  - title: "Líder Técnico"
-    company: "UnBeatables RoboCup SPL"
-    institution: "Universidade de Brasília (UnB)"
-    start: "2025-07"
-    end: "2025-10"
-    image: ""
-    description: >
-      Selecionado como o membro com maior conhecimento técnico do time para liderar a UnBeatables
-      na maior competição de robótica do Brasil. Responsável pela estratégia técnica, alinhamento
-      da equipe e representação do time em competições nacionais. Além da competição, coordenei uma
-      exposição interativa no Hacktudo (Rio de Janeiro), onde crianças controlavam os robôs NAO via
-      controle de videogame, promovendo divulgação científica de forma lúdica.
-    technologies:
-      - C++
-      - Python
-      - SSH
-      - Sockets UDP/TCP
-      - Gentoo Linux
-    achievements:
-      - "1º lugar na Standard Platform League - Competição Brasileira de Robótica (CBR) 2025"
-      - "Exposição interativa com crianças realizada no Hacktudo Rio de Janeiro 2025"
-      - "Divulgação científica de robótica para público infantil em evento nacional"
-    current: false
-
   - title: "Trainee Backend"
-    company: "EngNet Consultoria"
-    institution: "EngNet Consultoria"
+    company: "EngNet"
+    institution: "EngNet Consultoria - Campus UnB Darcy Ribeiro"
     start: "2025-09"
     end: "2025-11"
     image: ""
@@ -111,6 +116,30 @@ experiences:
       - "Sistema ERP interno entregue com autenticação segura e middleware em todas as rotas"
       - "Redução de retrabalho operacional via automação de processos no ERP"
       - "Pipeline de CI/CD implementado, padronizando deploys da equipe"
+    current: false
+
+  - title: "Líder Técnico"
+    company: "UnBeatables RoboCup SPL"
+    institution: "Universidade de Brasília (UnB)"
+    start: "2025-07"
+    end: "2025-10"
+    image: ""
+    description: >
+      Selecionado como o membro com maior conhecimento técnico do time para liderar a UnBeatables
+      na maior competição de robótica do Brasil. Responsável pela estratégia técnica, alinhamento
+      da equipe e representação do time em competições nacionais. Além da competição, coordenei uma
+      exposição interativa no Hacktudo (Rio de Janeiro), onde crianças controlavam os robôs NAO via
+      controle de videogame, promovendo divulgação científica de forma lúdica.
+    technologies:
+      - C++
+      - Python
+      - SSH
+      - Sockets UDP/TCP
+      - Gentoo Linux
+    achievements:
+      - "1º lugar na Standard Platform League — Competição Brasileira de Robótica (CBR) 2025"
+      - "Exposição interativa com crianças realizada no Hacktudo Rio de Janeiro 2025"
+      - "Divulgação científica de robótica para público infantil em evento nacional"
     current: false
 
   - title: "Desenvolvedor Embarcado"
@@ -140,31 +169,3 @@ experiences:
       - "Redução de latência em comunicação distribuída entre agentes robóticos"
       - "Base técnica que levou o time ao 1º lugar na CBR SPL na temporada seguinte"
     current: false
-
-  - title: "Monitor Universitário"
-    company: "Engenharia de Software"
-    institution: "Universidade de Brasília (UnB / FGA)"
-    start: "2023-03"
-    end: null
-    image: ""
-    description: >
-      Atuação contínua como monitor em disciplinas do curso de Engenharia de Software da UnB desde
-      2023, cobrindo cinco disciplinas ao longo de seis semestres. Responsável por atendimento a
-      alunos, correção de trabalhos e provas, e criação de material de apoio. A sequência de
-      monitorias em disciplinas progressivamente mais complexas - de fundamentos a arquitetura e
-      gerência de configuração - evidencia domínio técnico consolidado e capacidade de transmitir
-      conhecimento em diferentes níveis de abstração.
-    technologies:
-      - Docker
-      - Git
-      - CI/CD
-      - SOLID
-      - Design Patterns
-      - TDD
-      - Jest
-      - GitHub Actions
-    achievements:
-      - "6 semestres consecutivos de monitoria em disciplinas de Engenharia de Software"
-      - "5 disciplinas distintas cobrindo fundamentos, arquitetura, testes e infraestrutura"
-      - "Capacidade de ensinar SOLID, Docker, TDD e CI/CD comprovada em contexto acadêmico"
-    current: true
