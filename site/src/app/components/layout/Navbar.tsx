@@ -65,10 +65,15 @@ export default function Navbar({
                             e.preventDefault();
                             handleNav("#sobre");
                         }}
-                        className="font-black text-sm tracking-widest uppercase shrink-0 font-mono focus-visible:outline-primary"
+                        className="shrink-0 focus-visible:outline-primary"
                         aria-label="João Ginuino - go to top"
                     >
-                        JG
+                        <img
+                            src="/assets/icon.png"
+                            alt="João Ginuino logo"
+                            className="h-10 w-10 object-contain"
+                            aria-hidden="true"
+                        />
                     </a>
 
                     {/* Desktop links */}
