@@ -1,6 +1,6 @@
-import React, {memo, useState, useEffect} from "react";
+import React, {memo, useEffect, useState} from "react";
 import {AnimatePresence, motion, useReducedMotion} from "motion/react";
-import {Github} from "lucide-react";
+import {ChevronLeft, ChevronRight, Github, Gitlab} from "lucide-react";
 import {fadeUp, fadeUpReduced, pick, slideLeftChild, slideLeftChildReduced, staggerParent,} from "@/lib/animate";
 import SectionIndex from "@/app/components/ui/SectionIndex";
 import TechBadge from "@/app/components/ui/TechBadge";
@@ -8,7 +8,6 @@ import TechBadge from "@/app/components/ui/TechBadge";
 import projectsBg from "@/assets/unb.png";
 import type {Project, ProjectFilter} from "@/types";
 import type {Translations} from "@/lib/i18n";
-import {ChevronLeft, ChevronRight} from "lucide-react";
 
 // ─── Filter tabs ──────────────────────────────────────────────────────────────
 
@@ -77,9 +76,9 @@ function usePageSize(): number {
 
 function getPageSize(width: number): number {
     if (width < 640) return 5;   // mobile
-    if (width < 1024) return 8;  // tablet
-    if (width < 1536) return 10; // desktop
-    return 12;                   // telas grandes
+    if (width < 1024) return 6;  // tablet
+    if (width < 1536) return 7; // desktop
+    return 8;                   // telas grandes
 }
 
 const ProjectList = memo(function ProjectList({
@@ -238,9 +237,12 @@ const ProjectPreview = memo(function ProjectPreview({
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex h-8 w-8 items-center justify-center rounded-full bg-black/50 backdrop-blur-md text-white hover:bg-primary transition-colors"
-                            aria-label={`Open ${project.title} on GitHub`}
+                            aria-label={`Open ${project.title} on ${project.repository.includes('gitlab.com') ? 'GitLab' : 'GitHub'}`}
                         >
-                            <Github className="h-3.5 w-3.5" aria-hidden="true"/>
+                            {project.repository.includes('gitlab.com')
+                                ? <Gitlab className="h-3.5 w-3.5" aria-hidden="true"/>
+                                : <Github className="h-3.5 w-3.5" aria-hidden="true"/>
+                            }
                         </a>
                     )}
                 </div>

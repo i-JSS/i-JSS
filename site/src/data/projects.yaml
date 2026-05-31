@@ -598,3 +598,251 @@ projects:
     role: "Engenheiro de ML"
     duration: "40 horas"
     image: "chiquinho.png"
+
+  - id: "7b284429b66g1178739c4c13"
+    title: "DNIT Frontend"
+    category: professional
+    description: >
+      Desenvolvimento de aplicação web para o Departamento Nacional de Infraestrutura de
+      Transportes (DNIT), com foco na digitalização e substituição de planilhas Excel utilizadas
+      pela equipe interna. Conduzido em ambiente ágil com Scrum e Extreme Programming (XP),
+      aplicando práticas como pair programming, integração contínua e planejamento incremental.
+      Contribuí com desenvolvimento de componentes React, escrita de testes unitários e pipelines
+      de CI/CD. O projeto foi apresentado na sede do DNIT em Brasília, onde recebemos
+      reconhecimento direto dos stakeholders pelo resultado entregue.
+    stack:
+      - React
+      - TypeScript
+      - Jest
+      - Docker
+      - GitHub Actions
+    repository: "https://github.com/fga-eps-mds/2023.2-Dnit-Front"
+    start: "2023-08-11"
+    end: "2023-12-11"
+    learnings:
+      - "Desenvolvimento full-stack de aplicação web com React e TypeScript"
+      - "Digitalização de processos internos com substituição de planilhas por sistema web"
+      - "Aplicação de metodologias ágeis Scrum e Extreme Programming (XP)"
+      - "Práticas de pair programming e planejamento incremental"
+      - "Escrita de testes unitários com Jest e pipelines de CI/CD com GitHub Actions"
+      - "Entrega de software para cliente real com apresentação presencial dos resultados"
+    role: "Desenvolvedor Frontend"
+    duration: "40 horas"
+    image: "dnit-front.png"
+
+  - id: "3c395530c77h2289840d5d24"
+    title: "DNIT Escola Service"
+    category: professional
+    description: >
+      Desenvolvimento backend de microsserviço em C# com .NET 6 para o Departamento Nacional
+      de Infraestrutura de Transportes (DNIT), responsável pelas funcionalidades de gerência de
+      escolas, polos e cálculo de ranque de prioridades. Conduzido em ambiente ágil com Scrum e
+      Extreme Programming (XP), aplicando práticas como pair programming, integração contínua e
+      planejamento incremental. Contribuí com modelagem e manipulação do banco de dados PostgreSQL
+      e escrita de testes automatizados. O projeto foi apresentado na sede do DNIT em Brasília,
+      recebendo reconhecimento direto dos stakeholders pelo resultado entregue.
+    stack:
+      - C#
+      - .NET 6
+      - PostgreSQL
+      - Docker
+      - GitHub Actions
+    repository: "https://github.com/fga-eps-mds/2023.2-Dnit-EscolaService"
+    start: "2023-08-11"
+    end: "2023-12-04"
+    learnings:
+      - "Desenvolvimento backend de microsserviço com C# e .NET 6"
+      - "Modelagem e manipulação de banco de dados relacional com PostgreSQL"
+      - "Escrita de testes automatizados em ambiente .NET"
+      - "Aplicação de metodologias ágeis Scrum e Extreme Programming (XP)"
+      - "Práticas de pair programming e integração contínua com GitHub Actions"
+      - "Entrega de software para cliente real com apresentação presencial dos resultados"
+    role: "Desenvolvedor Backend"
+    duration: "30 horas"
+    image: "dnit-es.png"
+
+  - id: "9e461652e99j4401062f7f46"
+    title: "MeasureSoftGram AI"
+    category: professional
+    description: >
+      Desenvolvimento de servidor MCP (Model Context Protocol) em Python para integração do
+      MeasureSoftGram, plataforma de análise de qualidade de software, com modelos de linguagem
+      (LLMs), expondo métricas, releases e características de qualidade como ferramentas para
+      agentes de IA. Atuei como arquiteto do MCP e implementei o pipeline de CI/CD com publicação
+      no DockerHub para validação em homologação com o cliente. Conduzido com metodologia ágil,
+      Scrum e análise estática com SonarQube.
+    stack:
+      - Python
+      - FastMCP
+      - Docker
+      - GitHub Actions
+      - SonarQube
+    repository: "https://github.com/fga-eps-mds/2026.1-MeasureSoftGram-AI"
+    start: "2026-03-16"
+    end: "2026-07-18"
+    learnings:
+      - "Arquitetura e implementação de servidor MCP (Model Context Protocol) para integração com LLMs"
+      - "Exposição de dados de análise de qualidade de software como ferramentas consumíveis por agentes de IA"
+      - "Configuração de pipeline CI/CD com publicação de imagens no DockerHub para ambiente de homologação"
+      - "Análise estática de código e monitoramento de qualidade com SonarQube"
+      - "Aplicação de metodologias ágeis Scrum e XP em contexto de produto de software acadêmico-profissional"
+      - "Escrita de testes automatizados com pytest em projeto Python"
+    role: "Engenheiro de IA"
+    duration: "60 horas"
+    image: "msgram-ai.png"
+
+  - id: "2d572763d88i3390951e6e35"
+    title: "MeasureSoftGram Action"
+    category: professional
+    description: >
+      Desenvolvimento de GitHub Action em TypeScript para integração do MeasureSoftGram, plataforma
+      de análise de qualidade de software, em pipelines CI/CD, coletando métricas do SonarQube e
+      do GitHub e enviando os resultados ao serviço web. Contribuí com a identidade visual da action,
+      criação de Dockerfiles para ambiente de desenvolvimento local com suporte ao act, pipeline de
+      homologação no DockerHub e auxílio na integração com SonarQube. Conduzido com metodologia
+      ágil e Scrum.
+    stack:
+      - TypeScript
+      - GitHub Actions
+      - Docker
+      - SonarQube
+      - Jest
+    repository: "https://github.com/fga-eps-mds/2026.1-MeasureSoftGram-Action"
+    start: "2026-03-16"
+    end: "2026-07-18"
+    learnings:
+      - "Desenvolvimento de GitHub Action customizada em TypeScript"
+      - "Configuração de ambiente de desenvolvimento local com Docker e act para testar Actions localmente"
+      - "Pipeline de homologação com publicação de imagens no DockerHub"
+      - "Integração com SonarQube para coleta de métricas de qualidade de código"
+      - "Identidade visual e branding de ferramentas open-source"
+      - "Aplicação de metodologias ágeis Scrum e XP"
+    role: "Engenheiro DevOps"
+    duration: "40 horas"
+    image: "msgram-action.png"
+
+  - id: "1f593874f11k5512173g8g57"
+    title: "MeasureSoftGram Service"
+    category: professional
+    description: >
+      Desenvolvimento backend em Python do serviço central do MeasureSoftGram, plataforma de
+      análise de qualidade de software, responsável por armazenar e manipular métricas,
+      configurações e análises via API REST com padrão MVC. Contribuí com a criação dos Dockerfiles
+      de produção e desenvolvimento (com hot-reload via docker compose watch), pipeline de
+      homologação com publicação no DockerHub e integração com SonarCloud para análise estática
+      contínua. Conduzido com metodologia ágil e Scrum.
+    stack:
+      - Python
+      - Django
+      - Docker
+      - GitHub Actions
+      - SonarQube
+    repository: "https://github.com/fga-eps-mds/2026.1-MeasureSoftGram-Service"
+    start: "2026-03-16"
+    end: "2026-07-18"
+    learnings:
+      - "Criação de Dockerfiles otimizados para ambientes de produção e desenvolvimento"
+      - "Configuração de hot-reload em ambiente containerizado com docker compose watch"
+      - "Pipeline de homologação com publicação de imagens no DockerHub"
+      - "Integração com SonarCloud para análise estática e monitoramento contínuo de qualidade"
+      - "Desenvolvimento backend com Python seguindo padrão MVC"
+      - "Aplicação de metodologias ágeis Scrum e XP"
+    role: "Engenheiro DevOps"
+    duration: "10 horas"
+    image: "msgram-service.png"
+
+  - id: "4h627985g22l6623284h9h68"
+    title: "MeasureSoftGram Frontend"
+    category: professional
+    description: >
+      Desenvolvimento frontend em Next.js e TypeScript do MeasureSoftGram, plataforma de análise
+      de qualidade de software, responsável pela interface de visualização de métricas, releases e
+      resultados de análise. Contribuí com a criação dos Dockerfiles de produção e desenvolvimento,
+      com o compose de produção consumindo imagens publicadas no DockerHub, e com as pipelines de
+      publicação automática e ambiente de homologação via GitHub Actions. Conduzido com metodologia
+      ágil e Scrum.
+    stack:
+      - Next.js
+      - TypeScript
+      - Docker
+      - GitHub Actions
+      - SonarQube
+    repository: "https://github.com/fga-eps-mds/2026.1-MeasureSoftGram-Front"
+    start: "2026-03-16"
+    end: "2026-07-18"
+    learnings:
+      - "Criação de Dockerfiles otimizados para ambientes de produção e desenvolvimento em aplicação Next.js"
+      - "Configuração de docker-compose de produção consumindo imagens do DockerHub"
+      - "Pipeline de publicação automática de imagens no DockerHub com GitHub Actions"
+      - "Configuração de ambiente de homologação em pipeline CI/CD"
+      - "Integração com SonarQube para análise estática de qualidade de código"
+      - "Aplicação de metodologias ágeis Scrum e XP"
+    role: "Engenheiro DevOps"
+    duration: "10 horas"
+    image: "msgram-front.png"
+
+  - id: "8j741096h33m7734395i0i79"
+    title: "EJ Application"
+    category: professional
+    description: >
+      Contribuição em software livre para a plataforma EJ (Empurrando Juntas), sistema open-source
+      de participação social que utiliza gamificação e machine learning para promover discussões e
+      democracia digital, combatendo câmaras de eco em redes sociais. Atuei com escrita e correção
+      de testes de sistema, manutenção e correção de bugs na pipeline CI/CD do GitLab (linter,
+      verificação de coverage como gate de aprovação de MR) e correções na documentação da API
+      via Swagger.
+    stack:
+      - Python
+      - Django
+      - Docker
+      - GitLab CI
+      - Pytest
+    repository: "https://gitlab.com/gces-ej/ej-application"
+    start: "2025-08-18"
+    end: "2025-12-02"
+    learnings:
+      - "Contribuição em projeto de software livre com licença GNU GPLv3"
+      - "Escrita e correção de testes de sistema com Pytest"
+      - "Configuração de linter e verificação de cobertura de testes como gate de aprovação em pipeline CI/CD"
+      - "Correção de bugs e manutenção de pipelines GitLab CI"
+      - "Documentação e correção de endpoints REST via Swagger"
+      - "Participação em democracia digital e participação social aplicada a software"
+    role: "Engenheiro DevOps"
+    duration: "60 horas"
+    image: "ej.png"
+
+
+#    ------------------
+
+# - ATLAS
+
+# - OCEARCH
+# - E-LIXO
+
+# - VIRTUALIZAÇÃO PSPD
+
+# - BIONICA APP
+# - ERP ENGNET
+# - ACESSO A INFORMAÇÃO HACKATHON
+
+# - IGRIS BACK
+
+# - MCP IGRIS
+# - MCP SUGESTÃO DE TÉCNICAS SPU
+
+# - BOT TELEGRAM PA
+# - BANCO EM GRAFOS PA
+# - SOLUCIONADOR DE LABIRINTOS PA
+
+# - MCP MEASURESOFTGRAM - OK
+
+# - DNIT FRONT - OK
+# - DNIT BACK - OK
+
+# - MEASURESOFTGRAM ACTION - OK
+# - MEASURESOFTGRAM BACK - OK
+# - MEASURESOFTGRAM FRONT - OK
+
+# - CLUSTERIZAÇÃO GCES - OK
+
+
