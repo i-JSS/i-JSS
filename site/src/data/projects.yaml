@@ -811,38 +811,117 @@ projects:
     duration: "60 horas"
     image: "ej.png"
 
+  - id: "5k852107i44n8845406j1j80"
+    title: "EngNet - Enterprise Resource Planning (ERP)"
+    category: professional
+    description: >
+      Desenvolvimento full-stack de sistema web para gerenciamento de processos internos da EngNet
+      Consultoria, retomando um projeto parcialmente implementado e entregando backend, banco de
+      dados e infraestrutura do zero. A aplicação cobre autenticação JWT, dashboard gerencial,
+      gestão de reembolsos, clientes e membros, e exportação de relatórios em Excel. A arquitetura
+      é containerizada com Docker e orquestrada via docker-compose, com NGINX como proxy reverso
+      com SSL, banco PostgreSQL e pipeline CI/CD com deploy automático na branch de produção via
+      GitHub Actions.
+    stack:
+      - NestJS
+      - Next.js
+      - PostgreSQL
+      - Docker
+      - Nginx
+    repository: "https://github.com/EngNet-Desafio-4/EngNet"
+    start: "2025-11-01"
+    end: "2025-11-25"
+    learnings:
+      - "Desenvolvimento full-stack com NestJS no backend e Next.js no frontend"
+      - "Modelagem de banco de dados relacional com PostgreSQL e TypeORM"
+      - "Configuração de NGINX como proxy reverso com suporte a HTTPS/SSL"
+      - "Orquestração de múltiplos serviços com Docker Compose"
+      - "Pipeline CI/CD com deploy automático via GitHub Actions"
+      - "Autenticação e controle de sessão com JWT"
+      - "Documentação de API REST com Swagger/OpenAPI"
+    role: "Desenvolvedor Full-Stack"
+    duration: "50 horas"
+    image: "eng-erp.png"
+
+  - id: "6l963218j55o9956517k2k91"
+    title: "Hackathon CGDF - Acesso à Informação"
+    category: competition
+    description: >
+      Solução desenvolvida para o 1º Hackathon em Controle Social, Desafio Participa DF (CGDF/DF),
+      na categoria de classificação automática de pedidos LAI (Lei de Acesso à Informação) para
+      identificação de dados pessoais. A API REST em FastAPI implementa um pipeline de validação
+      encadeado (Chain of Responsibility) com detecção de CPF, RG, telefone, e-mail e nomes via
+      spaCy. O projeto conta com Dockerfiles separados para produção e desenvolvimento, linter
+      (Ruff), formatação (Black), testes com Pytest e pipeline CI/CD via GitHub Actions.
+    stack:
+      - Python
+      - FastAPI
+      - spaCy
+      - Docker
+      - GitHub Actions
+    repository: "https://github.com/i-JSS/Information-Access-Hackathon-CGDF"
+    start: "2026-01-11"
+    end: "2026-01-25"
+    learnings:
+      - "Implementação do padrão Chain of Responsibility para pipeline de validação"
+      - "Detecção de entidades nomeadas (NER) com spaCy em português"
+      - "Desenvolvimento de API REST com FastAPI e documentação via Swagger"
+      - "Configuração de linter (Ruff) e formatação (Black) como gates de CI"
+      - "Dockerfiles separados para ambientes de desenvolvimento e produção"
+      - "Pipeline CI/CD com build, lint, testes e shutdown automático via GitHub Actions"
+    role: "Desenvolvedor Backend"
+    duration: "30 horas"
+    image: "cgdf.png"
+
+  - id: "7m074329k66p0067628l3l02"
+    title: "Bionica App - Braço de Ferro"
+    category: professional
+    description: >
+      Desenvolvimento mobile de aplicativo para configuração e uso de próteses biônicas via
+      Bluetooth, permitindo calibração de sensores musculares e treino de controle da prótese por
+      meio de jogos interativos. Atuei na implementação da funcionalidade de exclusão de conta
+      (requisito obrigatório de conformidade para publicação nas lojas) e no processo de build e
+      deploy para a Apple App Store utilizando Xcode. Projeto desenvolvido com React Native em
+      ambiente de consultoria.
+    stack:
+      - React Native
+      - TypeScript
+      - Xcode
+      - Bluetooth (BLE)
+    repository: "https://apps.apple.com/br/iphone/apps"
+    start: "2026-03-03"
+    end: "2026-06-01"
+    learnings:
+      - "Build e publicação de aplicativo React Native na Apple App Store via Xcode"
+      - "Processo de submissão e conformidade com as diretrizes da App Store (Apple Review Guidelines)"
+      - "Implementação de funcionalidade de exclusão de conta em conformidade com políticas de privacidade (LGPD / App Store)"
+      - "Integração com dispositivos Bluetooth (BLE) em aplicativo mobile"
+      - "Desenvolvimento mobile multiplataforma com React Native e TypeScript"
+    role: "Desenvolvedor Mobile"
+    duration: "30 horas"
+    image: "bionica.png"
+
 
 #    ------------------
 
 # - ATLAS
-
 # - OCEARCH
 # - E-LIXO
-
 # - VIRTUALIZAÇÃO PSPD
-
-# - BIONICA APP
-# - ERP ENGNET
-# - ACESSO A INFORMAÇÃO HACKATHON
-
 # - IGRIS BACK
-
 # - MCP IGRIS
 # - MCP SUGESTÃO DE TÉCNICAS SPU
-
 # - BOT TELEGRAM PA
 # - BANCO EM GRAFOS PA
 # - SOLUCIONADOR DE LABIRINTOS PA
 
+# - BIONICA APP - OK
+# - ERP ENGNET - OK
+# - ACESSO A INFORMAÇÃO HACKATHON - OK
 # - MCP MEASURESOFTGRAM - OK
-
 # - DNIT FRONT - OK
 # - DNIT BACK - OK
-
 # - MEASURESOFTGRAM ACTION - OK
 # - MEASURESOFTGRAM BACK - OK
 # - MEASURESOFTGRAM FRONT - OK
-
 # - CLUSTERIZAÇÃO GCES - OK
-
-

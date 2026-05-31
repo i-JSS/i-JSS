@@ -1,6 +1,6 @@
 import React, {memo, useEffect, useState} from "react";
 import {AnimatePresence, motion, useReducedMotion} from "motion/react";
-import {ChevronLeft, ChevronRight, Github, Gitlab} from "lucide-react";
+import {ChevronLeft, ChevronRight, Github, Gitlab, Apple} from "lucide-react";
 import {fadeUp, fadeUpReduced, pick, slideLeftChild, slideLeftChildReduced, staggerParent,} from "@/lib/animate";
 import SectionIndex from "@/app/components/ui/SectionIndex";
 import TechBadge from "@/app/components/ui/TechBadge";
@@ -237,11 +237,17 @@ const ProjectPreview = memo(function ProjectPreview({
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex h-8 w-8 items-center justify-center rounded-full bg-black/50 backdrop-blur-md text-white hover:bg-primary transition-colors"
-                            aria-label={`Open ${project.title} on ${project.repository.includes('gitlab.com') ? 'GitLab' : 'GitHub'}`}
+                            aria-label={`Open ${project.title} on ${
+                                project.repository.includes('gitlab.com') ? 'GitLab' :
+                                    project.repository.includes('apps.apple.com') ? 'App Store' :
+                                        'GitHub'
+                            }`}
                         >
                             {project.repository.includes('gitlab.com')
-                                ? <Gitlab className="h-3.5 w-3.5" aria-hidden="true"/>
-                                : <Github className="h-3.5 w-3.5" aria-hidden="true"/>
+                                ? <Gitlab className="h-3.5 w-3.5" aria-hidden="true" />
+                                : project.repository.includes('apps.apple.com')
+                                    ? <Apple className="h-3.5 w-3.5" aria-hidden="true" />
+                                    : <Github className="h-3.5 w-3.5" aria-hidden="true" />
                             }
                         </a>
                     )}
