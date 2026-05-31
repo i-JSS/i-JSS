@@ -812,7 +812,7 @@ projects:
     image: "ej.png"
 
   - id: "5k852107i44n8845406j1j80"
-    title: "EngNet - Enterprise Resource Planning (ERP)"
+    title: "EngNet - ERP (Enterprise Resource Planning)"
     category: professional
     description: >
       Desenvolvimento full-stack de sistema web para gerenciamento de processos internos da EngNet
@@ -901,6 +901,85 @@ projects:
     duration: "30 horas"
     image: "bionica.png"
 
+  - id: "8n185440l77q1178739m4m13"
+    title: "Academic Schedule Bot"
+    category: academic
+    description: >
+      Bot para Telegram desenvolvido em Kotlin que gera automaticamente todas as possíveis grades
+      horárias para estudantes universitários, aplicando o algoritmo guloso de interval scheduling
+      para detecção e resolução de conflitos de horários. O bot consulta dados de disciplinas
+      armazenados em PostgreSQL e apresenta as combinações válidas diretamente no chat.
+    stack:
+      - Kotlin
+      - PostgreSQL
+      - Telegram Bot API
+      - Gradle
+    repository: "https://github.com/i-JSS/Academic-Schedule-Bot"
+    start: "2025-01-05"
+    end: "2025-01-19"
+    learnings:
+      - "Implementação do algoritmo guloso de interval scheduling para resolução de conflitos de horários"
+      - "Desenvolvimento de bot para Telegram com Kotlin"
+      - "Modelagem e consulta de banco de dados relacional com PostgreSQL"
+      - "Geração combinatória de grades horárias sem conflitos"
+      - "Build e gerenciamento de dependências com Gradle"
+    role: "Engenheiro de Software"
+    duration: "10 horas"
+    image: "telegram.png"
+
+  - id: "9o296551m88r2289850n5n24"
+    title: "Maze Solver"
+    category: academic
+    description: >
+      Gerador e solucionador de labirintos em Python com interface gráfica. O labirinto é gerado
+      proceduralmente e resolvido com o algoritmo de Dijkstra, com pesos variados nos caminhos
+      para simular terrenos com custos diferentes. Implementa também o algoritmo de Prim para
+      encontrar a menor árvore geradora entre múltiplos pontos do labirinto, permitindo comparar
+      estratégias distintas de otimização em grafos.
+    stack:
+      - Python
+      - Pygame
+      - Tkinter
+    repository: "https://github.com/i-JSS/Maze-Solver"
+    start: "2024-11-18"
+    end: "2024-11-25"
+    learnings:
+      - "Implementação do algoritmo de Dijkstra para caminhos mínimos com pesos em grafos"
+      - "Implementação do algoritmo de Prim para árvore geradora mínima"
+      - "Geração procedural de labirintos como estrutura de grafos"
+      - "Modelagem de grafos com custos variados para simular terrenos"
+      - "Desenvolvimento de interface gráfica interativa com Pygame e Tkinter"
+    role: "Engenheiro de Software"
+    duration: "5 horas"
+    image: "maze.png"
+
+  - id: "0p307662n99s3390961o6o35"
+    title: "UnB Academic Graph"
+    category: academic
+    description: >
+      Modelagem do currículo acadêmico da UnB como grafo de dependências em banco de dados de
+      grafos Neo4j, mapeando pré-requisitos, co-requisitos e equivalências de todas as disciplinas
+      com dados reais extraídos do SIGAA. A busca em largura (BFS) é executada em memória para
+      encontrar o menor caminho de pré-requisitos necessário para concluir uma disciplina alvo,
+      com interface gráfica para visualização do grafo resultante.
+    stack:
+      - Python
+      - Neo4j
+      - NetworkX
+      - Matplotlib
+    repository: "https://github.com/i-JSS/UnB-Academic-Graph"
+    start: "2024-10-21"
+    end: "2024-10-24"
+    learnings:
+      - "Modelagem de dados acadêmicos como grafo de dependências em Neo4j"
+      - "Implementação de BFS para menor caminho em grafo de pré-requisitos"
+      - "Extração e tratamento de dados reais do SIGAA/UnB"
+      - "Carregamento e manipulação de grafos em memória com NetworkX"
+      - "Visualização de grafos com Matplotlib e interface gráfica com Tkinter"
+    role: "Engenheiro de Software"
+    duration: "10 horas"
+    image: "grafo.jpg"
+
 
 #    ------------------
 
@@ -908,20 +987,7 @@ projects:
 # - OCEARCH
 # - E-LIXO
 # - VIRTUALIZAÇÃO PSPD
+
 # - IGRIS BACK
 # - MCP IGRIS
 # - MCP SUGESTÃO DE TÉCNICAS SPU
-# - BOT TELEGRAM PA
-# - BANCO EM GRAFOS PA
-# - SOLUCIONADOR DE LABIRINTOS PA
-
-# - BIONICA APP - OK
-# - ERP ENGNET - OK
-# - ACESSO A INFORMAÇÃO HACKATHON - OK
-# - MCP MEASURESOFTGRAM - OK
-# - DNIT FRONT - OK
-# - DNIT BACK - OK
-# - MEASURESOFTGRAM ACTION - OK
-# - MEASURESOFTGRAM BACK - OK
-# - MEASURESOFTGRAM FRONT - OK
-# - CLUSTERIZAÇÃO GCES - OK
