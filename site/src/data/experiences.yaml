@@ -30,7 +30,7 @@ experiences:
 
   - title: "Monitor Universitário"
     company: "Engenharia de Software"
-    institution: "Faculdade de Ciências e Tecnologias em Engenharia - Universidade de Brasília"
+    institution: "Faculdade de Ciências e Tecnologias em Engenharia - UnB"
     start: "2023-03"
     end: null
     image: "unb.png"
@@ -58,7 +58,7 @@ experiences:
 
   - title: "Assessor de Projetos"
     company: "EngNet Consultoria"
-    institution: "Empresa Júnior de Engenharia de Redes de Comunicação - Universidade de Brasília"
+    institution: "Empresa Júnior de Engenharia de Redes de Comunicação - UnB"
     start: "2025-11"
     end: "2026-06"
     image: "engnet.svg"
@@ -89,7 +89,7 @@ experiences:
 
   - title: "Trainee Backend"
     company: "EngNet Consultoria"
-    institution: "Empresa Júnior de Engenharia de Redes de Comunicação - Universidade de Brasília"
+    institution: "Empresa Júnior de Engenharia de Redes de Comunicação - UnB"
     start: "2025-09"
     end: "2025-11"
     image: "engnet.svg"

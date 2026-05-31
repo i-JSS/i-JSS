@@ -1,4 +1,4 @@
-import React, {memo} from "react";
+import React, {memo, useState, useEffect} from "react";
 import {AnimatePresence, motion, useReducedMotion} from "motion/react";
 import {Github} from "lucide-react";
 import {fadeUp, fadeUpReduced, pick, slideLeftChild, slideLeftChildReduced, staggerParent,} from "@/lib/animate";
@@ -8,6 +8,7 @@ import TechBadge from "@/app/components/ui/TechBadge";
 import projectsBg from "@/assets/unb.png";
 import type {Project, ProjectFilter} from "@/types";
 import type {Translations} from "@/lib/i18n";
+import {ChevronLeft, ChevronRight} from "lucide-react";
 
 // ─── Filter tabs ──────────────────────────────────────────────────────────────
 
@@ -50,7 +51,7 @@ const ProjectFilters = memo(function ProjectFilters({
     );
 });
 
-// ─── Project list ─────────────────────────────────────────────────────────────
+// ─── No ProjectList, adiciona paginação ───────────────────────────────────────
 
 interface ProjectListProps {
     projects: Project[];
@@ -59,68 +60,131 @@ interface ProjectListProps {
     filterKey: ProjectFilter;
     categoryLabel: (cat: string) => string;
     reduced: boolean | null;
+    tr: Translations["projects"];  // adiciona isso
+}
+
+function usePageSize(): number {
+    const [size, setSize] = useState(() => getPageSize(window.innerWidth));
+
+    useEffect(() => {
+        const handler = () => setSize(getPageSize(window.innerWidth));
+        window.addEventListener("resize", handler);
+        return () => window.removeEventListener("resize", handler);
+    }, []);
+
+    return size;
+}
+
+function getPageSize(width: number): number {
+    if (width < 640) return 5;   // mobile
+    if (width < 1024) return 8;  // tablet
+    if (width < 1536) return 10; // desktop
+    return 12;                   // telas grandes
 }
 
 const ProjectList = memo(function ProjectList({
-                                                  projects,
-                                                  selectedId,
-                                                  onSelect,
-                                                  filterKey,
-                                                  categoryLabel,
-                                                  reduced,
+                                                  projects, selectedId, onSelect, filterKey, categoryLabel, reduced, tr
                                               }: ProjectListProps) {
+
+    const pageSize = usePageSize();
+    const [page, setPage] = useState(0);
     const slide = pick(reduced, slideLeftChild, slideLeftChildReduced);
 
+    // reset page quando filtro muda
+    useEffect(() => { setPage(0); }, [filterKey]);
+
+    const totalPages = Math.ceil(projects.length / pageSize);
+    const paginated = projects.slice(page * pageSize, (page + 1) * pageSize);
+
     return (
-        <motion.ul
-            key={filterKey}
-            className="space-y-1 list-none"
-            variants={staggerParent(0.06)}
-            initial="hidden"
-            whileInView="show"
-            viewport={{once: true, margin: "-40px"}}
-            aria-label="Projects"
-        >
-            {projects.map((project) => (
-                <motion.li key={project.id} variants={slide}>
-                    <button
-                        className={`relative group w-full min-w-0 text-left cursor-pointer rounded-xl border px-6 py-4 transition-all duration-200 ${
-                            selectedId === project.id
-                                ? "border-primary bg-card shadow-md shadow-primary/5"
-                                : "border-transparent hover:border-border hover:bg-card/60"
-                        }`}
-                        onMouseEnter={() => onSelect(project)}
-                        onClick={() => onSelect(project)}
-                        aria-pressed={selectedId === project.id}
-                    >
-                        <div className="flex items-start justify-between gap-4">
-                            <div className="flex items-center gap-4 min-w-0 flex-1">
-                                <div
-                                    aria-hidden="true"
-                                    className={`h-1.5 w-1.5 rounded-full shrink-0 transition-colors mt-1 ${
-                                        selectedId === project.id
-                                            ? "bg-primary"
-                                            : "bg-border group-hover:bg-muted-foreground"
-                                    }`}
-                                />
-                                <div className="min-w-0 flex-1">
-                                    <p className="font-semibold text-sm truncate">{project.title}</p>
-                                    <p className="text-xs text-muted-foreground capitalize mt-0.5">
-                                        {categoryLabel(project.category)}
-                                    </p>
+        <div>
+            <motion.ul
+                key={`${filterKey}-${page}`}
+                className="space-y-1 list-none"
+                variants={staggerParent(0.06)}
+                initial="hidden"
+                animate="show"
+                aria-label="Projects"
+            >
+                {paginated.map((project) => (
+                    <motion.li key={project.id} variants={slide}>
+                        <button
+                            className={`relative group w-full min-w-0 text-left cursor-pointer rounded-xl border px-6 py-4 transition-all duration-200 ${
+                                selectedId === project.id
+                                    ? "border-primary bg-card shadow-md shadow-primary/5"
+                                    : "border-transparent hover:border-border hover:bg-card/60"
+                            }`}
+                            onMouseEnter={() => onSelect(project)}
+                            onClick={() => onSelect(project)}
+                            aria-pressed={selectedId === project.id}
+                        >
+                            <div className="flex items-start justify-between gap-4">
+                                <div className="flex items-center gap-4 min-w-0 flex-1">
+                                    <div
+                                        aria-hidden="true"
+                                        className={`h-1.5 w-1.5 rounded-full shrink-0 transition-colors mt-1 ${
+                                            selectedId === project.id
+                                                ? "bg-primary"
+                                                : "bg-border group-hover:bg-muted-foreground"
+                                        }`}
+                                    />
+                                    <div className="min-w-0 flex-1">
+                                        <p className="font-semibold text-sm truncate">{project.title}</p>
+                                        <p className="text-xs text-muted-foreground capitalize mt-0.5">
+                                            {categoryLabel(project.category)}
+                                        </p>
+                                    </div>
                                 </div>
+                                <span className="text-xs text-muted-foreground font-mono whitespace-nowrap shrink-0">
+                    {project.duration}
+                </span>
                             </div>
-                            <span className="text-xs text-muted-foreground font-mono whitespace-nowrap shrink-0">
-                {project.duration}
+                            <span className="absolute bottom-4 right-6 text-xs text-muted-foreground/90 font-mono pointer-events-none">
+                {project.role}
             </span>
-                        </div>
-                        <span className="absolute bottom-4 right-6 text-xs text-muted-foreground/90 font-mono pointer-events-none">
-            {project.role}
-        </span>
+                        </button>
+                    </motion.li>
+                ))}
+            </motion.ul>
+
+            {/* Paginação */}
+            {totalPages > 1 && (
+                <div className="flex items-center justify-between mt-6 px-2">
+                    <button
+                        onClick={() => setPage(p => p - 1)}
+                        disabled={page === 0}
+                        className="flex items-center gap-2 text-xs font-mono px-4 py-2 rounded-xl border border-border bg-card hover:border-primary/40 hover:text-primary disabled:opacity-20 disabled:cursor-not-allowed transition-all duration-200 shadow-sm"
+                    >
+                        <ChevronLeft className="h-3.5 w-3.5" aria-hidden="true" />
+                        {tr.prev}
                     </button>
-                </motion.li>
-            ))}
-        </motion.ul>
+
+                    <div className="flex items-center gap-1.5">
+                        {Array.from({length: totalPages}).map((_, i) => (
+                            <button
+                                key={i}
+                                onClick={() => setPage(i)}
+                                aria-label={`Página ${i + 1}`}
+                                className={`transition-all duration-200 rounded-full ${
+                                    i === page
+                                        ? "w-4 h-2 bg-primary"
+                                        : "w-2 h-2 bg-border hover:bg-muted-foreground"
+                                }`}
+                            />
+                        ))}
+                    </div>
+
+                    <button
+                        onClick={() => setPage(p => p + 1)}
+                        disabled={page === totalPages - 1}
+                        className="flex items-center gap-2 text-xs font-mono px-4 py-2 rounded-xl border border-border bg-card hover:border-primary/40 hover:text-primary disabled:opacity-20 disabled:cursor-not-allowed transition-all duration-200 shadow-sm"
+                    >
+                        {tr.next}
+                        <ChevronRight className="h-3.5 w-3.5" aria-hidden="true" />
+                    </button>
+                </div>
+            )}
+        </div>
     );
 });
 
@@ -313,6 +377,7 @@ export default function ProjectsSection({
                             filterKey={filter}
                             categoryLabel={(cat) => categoryLabels[cat] ?? cat}
                             reduced={reduced}
+                            tr={tr.projects}
                         />
                         <div className="h-0 lg:h-48" aria-hidden="true" />
                     </div>

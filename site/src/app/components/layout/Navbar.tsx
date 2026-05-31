@@ -69,7 +69,7 @@ export default function Navbar({
                         aria-label="João Ginuino - go to top"
                     >
                         <img
-                            src="/assets/icon.png"
+                            src="/assets/logo_wp.png"
                             alt="João Ginuino logo"
                             className="h-10 w-10 object-contain"
                             aria-hidden="true"

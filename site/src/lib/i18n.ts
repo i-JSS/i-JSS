@@ -33,6 +33,8 @@ const i18n = {
             duration: "Duração",
             role: "Papel",
             learnings: "Aprendizados",
+            prev: "anterior",
+            next: "próximo",
         },
         experience: {
             title: "Experiências",
@@ -106,6 +108,8 @@ const i18n = {
             duration: "Duration",
             role: "Role",
             learnings: "Key Learnings",
+            prev: "previous",
+            next: "next",
         },
         experience: {
             title: "Experience",
@@ -179,6 +183,8 @@ const i18n = {
             duration: "Duración",
             role: "Rol",
             learnings: "Aprendizajes",
+            prev: "anterior",
+            next: "siguiente",
         },
         experience: {
             title: "Experiencias",

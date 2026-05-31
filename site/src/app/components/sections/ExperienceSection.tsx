@@ -71,7 +71,7 @@ const ExperienceItem = memo(function ExperienceItem({
                             className="absolute -left-11 top-1/2 -translate-y-1/2 w-20 h-20 object-contain opacity-30 pointer-events-none select-none"                        />
                     )}
 
-                    <div className="flex items-center gap-3 pl-10">
+                    <div className="flex items-center gap-3 sm:pl-10">
                         <div>
                             <h3 className="font-bold text-base">{exp.title}</h3>
                             <p className="text-sm text-muted-foreground mt-0.5">{exp.company}</p>
