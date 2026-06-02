@@ -245,8 +245,7 @@ projects:
       Platform League (SPL), a principal liga de futebol de robôs humanoides do mundo. O projeto
       envolve software embarcado em Python para o robô humanoide NAO v6, integrando visão
       computacional, localização, tomada de decisão autônoma e comportamento cooperativo entre
-      agentes para disputa de partidas reais de futebol. Time representante do Brasil qualificado
-      internacionalmente na RoboCup.
+      agentes para disputa de partidas reais de futebol.
     stack:
       - Python
       - NAOqi SDK
@@ -291,7 +290,7 @@ projects:
     image: "sigaa.png"
 
   - id: "6a1334cb508acd6a99d5c648"
-    title: "QuintoAndar – Engenharia de Requisitos"
+    title: "QuintoAndar - Engenharia de Requisitos"
     category: academic
     description: >
       Engenharia reversa dos requisitos do aplicativo QuintoAndar Imóveis, cobrindo elicitação,
@@ -364,7 +363,7 @@ projects:
       - Implementação de triggers, stored procedures e views em PL/pgSQL
       - Uso de pgAgent para agendamento de tarefas no banco
       - Monitoramento de desempenho com pg_stat_statements
-    role: "Desenvolvedor Full Stack"
+    role: "DBA e Desenvolvedor Backend"
     duration: "60 horas"
     image: "prison.png"
 
@@ -389,7 +388,7 @@ projects:
       - Construção de frontend com TypeScript, HTML e CSS
       - Integração entre backend e frontend em arquitetura full-stack
       - Gerenciamento de dependências e build com Maven
-    role: "Desenvolvedor Full Stack"
+    role: "Desenvolvedor Full-Stack"
     duration: "25 horas"
     image: "kdmeuss.png"
 
@@ -423,7 +422,7 @@ projects:
     image: "papo.png"
 
   - id: "6a133489508acd6a99d5c640"
-    title: "Feudo – Amarelo Girassol"
+    title: "Feudo - Amarelo Girassol"
     category: academic
     description: >
       Jogo de cartas multiplayer online inspirado em Coup, desenvolvido em equipe. Responsável pelo
@@ -446,7 +445,7 @@ projects:
       - Implementação de lógica de estados e fluxo de jogo
       - Uso de TypeScript em projetos JavaScript
       - Colaboração em equipe utilizando Git e GitHub
-    role: "Desenvolvedor Full Stack"
+    role: "Desenvolvedor Full-Stack"
     duration: "30 horas"
     image: "feudo.png"
 
@@ -983,6 +982,7 @@ projects:
 
 #    ------------------
 
+# - i-JSS (portifolio)
 # - ATLAS
 # - OCEARCH
 # - E-LIXO
