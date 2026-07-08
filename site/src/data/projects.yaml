@@ -996,7 +996,7 @@ projects:
       - DB2
       - CICS
     repository: "https://github.com/i-JSS/Hackathon-Stefanini-2026"
-    start: "2026-06-01"
+    start: "2026-06-23"
     end: "2026-07-05"
     learnings:
       - "Desenvolvimento de sistema batch em COBOL desacoplado por arquivos, no padrão de comunicação entre steps de um job mainframe"
@@ -1010,10 +1010,35 @@ projects:
     duration: "60 horas"
     image: "cobol_ste.png"
 
-
+  - id: "6a4e454d88c28532669b3754"
+    title: "Portfólio Pessoal - joaoginuino.dev"
+    category: personal
+    description: >
+      Portfólio pessoal desenvolvido em React e TypeScript, com internacionalização PT/EN, dark
+      mode persistente e filtros dinâmicos de projetos por categoria. Construído com Vite e
+      componentização via shadcn/ui e Tailwind CSS, com lazy loading de seções, otimização de
+      SEO (Open Graph, meta tags, sitemap) e deploy contínuo em produção sob domínio próprio.
+    stack:
+      - React
+      - TypeScript
+      - Vite
+      - Tailwind CSS
+      - shadcn/ui
+    repository: "https://github.com/i-JSS/i-JSS"
+    start: "2025-04-01"
+    end: "2025-06-01"
+    learnings:
+      - "Desenvolvimento de SPA em React com TypeScript e componentização via shadcn/ui"
+      - "Implementação de internacionalização (i18n) e troca dinâmica de idioma"
+      - "Persistência de tema (dark/light mode) e preferências do usuário"
+      - "Otimização de performance com lazy loading e code splitting no Vite"
+      - "Aplicação de boas práticas de SEO e acessibilidade (Open Graph, ARIA, skip links)"
+      - "Deploy contínuo de aplicação front-end em domínio próprio"
+    role: "Desenvolvedor Front-end"
+    duration: "70 horas"
+    image: "portfolio.png"
 #    ------------------
 
-# - i-JSS (portifolio)
 # - ATLAS
 # - OCEARCH
 # - E-LIXO
