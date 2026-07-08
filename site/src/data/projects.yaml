@@ -887,7 +887,7 @@ projects:
       - TypeScript
       - Xcode
       - Bluetooth (BLE)
-    repository: "https://apps.apple.com/br/iphone/apps"
+    repository: "https://apps.apple.com/br/app/bi%C3%B4nica/id6761287895"
     start: "2026-03-03"
     end: "2026-06-01"
     learnings:
@@ -978,6 +978,37 @@ projects:
     role: "Engenheiro de Software"
     duration: "10 horas"
     image: "grafo.jpg"
+
+  - id: "6a4e3d0d88c28532669b3751"
+    title: "Finance Core - Sistema Financeiro Batch em COBOL"
+    category: competition
+    description: >
+      Sistema batch financeiro em COBOL desenvolvido para o Hackathon Stefanini 2026, simulando
+      um fluxo real de mainframe desacoplado por arquivos. Composto por dois programas principais
+      integrados via CALL/LINKAGE SECTION a um subprograma de regra de negócio, com copybooks
+      compartilhados, tratamento de exceções via FILE STATUS e build automatizado via Makefile.
+      Inclui mapeamento conceitual para JCL, DB2 e CICS.
+    stack:
+      - COBOL
+      - GnuCOBOL
+      - Mainframe (z/OS)
+      - JCL
+      - DB2
+      - CICS
+    repository: "https://github.com/i-JSS/Hackathon-Stefanini-2026"
+    start: "2026-06-01"
+    end: "2026-07-05"
+    learnings:
+      - "Desenvolvimento de sistema batch em COBOL desacoplado por arquivos, no padrão de comunicação entre steps de um job mainframe"
+      - "Modularização de regra de negócio em subprogramas via CALL e LINKAGE SECTION"
+      - "Tratamento de exceções de I/O com FILE STATUS e EVALUATE, cobrindo todos os códigos previstos no desafio"
+      - "Automação de build multiplataforma (Windows, Linux e Mac) com Makefile"
+      - "Reutilização de layouts de dados por meio de copybooks compartilhados"
+      - "Geração e leitura de arquivos sequenciais e exportação para JSON"
+      - "Aplicação conceitual de arquitetura mainframe (JCL, DB2 e CICS) sobre um projeto batch real"
+    role: "Desenvolvedor Mainframe"
+    duration: "60 horas"
+    image: "cobol_ste.png"
 
 
 #    ------------------
