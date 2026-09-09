@@ -4,7 +4,7 @@
   <img src="https://komarev.com/ghpvc/?username=joaoseisei&color=blueviolet" alt="Profile views"/>
 </p>
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=800080&font=Merriweather&size=35&center=true&vCenter=true&width=1000&lines=Hi+there,+I'm+João+Ginuino;See+my+projects+->+joaoginuino.dev;I+study+Software+Engineering+at+University+of+Brasilia;Be+Welcome!)](https://joaoginuino.dev/)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=800080&font=Merriweather&size=35&center=true&vCenter=true&width=1000&lines=Hi+there,+I'm+João+Ginuino;See+my+projects+->+joaoginuino.tech;I+study+Software+Engineering+at+University+of+Brasilia;Be+Welcome!)](https://joaoginuino.tech/)
 
 
 <div align="center">
